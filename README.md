@@ -1,2 +1,2 @@
 # Hello ETF
-This is the code for the web-based version of Escape The Frost; using HTML, CSS and Javascript. A survival RTS based the Intellectual Property of Frostpunk, which therefore means it will have exploration, crafting, survival and upgrades while adventuring the frozen snowy plains.
+This is the code for the landing page and Game Design Doc for Escape the Frost; using HTML & CSS. A survival RTS based the Intellectual Property of Frostpunk, which therefore means it will have exploration, crafting, survival and upgrades while adventuring the frozen snowy plains.
