@@ -1,26 +1,33 @@
 body {
     background-image: url("../MediaImagery/frostcity.jpeg");
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 126, 164);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1 {
-    text-align: center;
     font-weight: bold;
     font-size: 100px;
     color: rgb(0, 105, 170);
 }
 
+/*COLOR Classes section*/
 .blue1 /*Navigation Blue*/{color: rgb(1, 92, 237);}
 .blue2 /*Navigation background blue*/ {color: rgb(0, 0, 103);}
 .blue3 /*Objective Section Blue*/{color: rgba(0, 0, 182, 0.784);}
-.blue4 /*Button backgrund color */{background-color: rgb(0, 30, 75)}
-.blue5 /*Button Text color*/{color: rgb(0, 105, 170);}
-.blue6 /* Color*/{}
+.blue4 /*Button backgrund color */{background-color: rgb(0, 30, 75);}
+.blue5 /*Button Text color*/{color: rgb(50, 100, 240);}
+.blue6 /*Link Blue*/ {color: rgb(10, 175, 210);}
+.borderdarkblue {border: 5px ridge rgb(3, 5, 17);}
+.navcolorbackground {background-color: rgba(100, 100, 100, 0.1);}
+.navtextcolor {color: rgb(1, 92, 237);}
+.navbackhovercolor {background-color: rgb(0, 0, 103);}
+.linkcolorblue {color: rgb(10, 175, 210);}
+.headblue /*Heading color for Escape The Frost titles*/{color: rgb(0, 105, 170);}
+.linkunderlineblue {text-decoration-color:rgb(0, 0, 255);}
+/*Color Classes section close*/
 
 .lore-description {
-    text-align: center;
     font-size: 35px;
     font-weight: bold;
     color: rgba(0, 0, 182, 0.784);
@@ -30,23 +37,19 @@ h1 {
 .ImportantNotice {
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
     padding-left: 100px;
 }
 
-.aligncenter1 {
- text-align: center;
-    }
+.aligncenter1 {text-align: center;}
 
 .button {
     width: 40px;
 }
 
+/*Playbuttons section*/
  .playbutton {
-    text-align: center;
     font-family: sans-serif;
-    color: rgb(10, 175, 210);
-    text-decoration: rgb(10, 175, 210);
+    color: rgb(50, 100, 240);
     font-size: 30px;
     border: 5px ridge rgb(3, 5, 17);
     background-color: rgb(0, 30, 75);
@@ -55,44 +58,28 @@ h1 {
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
-    text-decoration-color: blue;
+    text-decoration: double;
 }
 
 .playbutton2 {
-    text-align: center;
     font-family: sans-serif;
     color: rgb(10, 175, 210);
     font-size: 20px;
-    border: 5px ridge rgb(0, 0, 0);
+    border: 5px ridge rgb(3, 5, 17);
     background-color: rgb(0, 30, 75);
     border-radius: 30px;
     padding: 5px 10px;
     margin: 0 auto;
     display: block;
     text-decoration: underline;
-    text-decoration-color:blue;
+    text-decoration-color:rgb(10, 175, 210);
 }
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+/*Playbuttons section close*/
 
-a { 
-    text-decoration: none;
-    color: rgb(0, 105, 170);
-}
-
-.listone {
-    list-style-type: none;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: left;
-    margin-top: 10em;
-    display: inline-block;
-    display: flex;
-    margin-left: -30px;
-    margin-bottom: 6px;
-    list-style-type: none;
-    display: inline-block;
-    display: flex;
-}
-
+/*Navigation Menu*/
 .list-nav {
     width: 17%;
     background-color: rgba(100, 100, 100, 0.1);
@@ -117,6 +104,11 @@ a {
     background-color: rgb(0, 0, 103);
 }
 
-.list-nav a.hover {
-    background-color: #00acca;
+/*Navigation Menu Close*/
+/*anchor section text decor remover*/
+a { 
+    text-decoration: none;
+    
 }
+/*anchor text closer*/
+
