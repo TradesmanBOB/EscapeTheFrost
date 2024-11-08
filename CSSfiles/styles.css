@@ -1,5 +1,5 @@
 body {
-    background-image: url("/MediaImagery/frostcity.jpeg");
+    background-image: url("../MediaImagery/frostcity.jpeg");
     background-color: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
