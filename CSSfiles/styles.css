@@ -1,6 +1,15 @@
 body {
-    background-image: url("../MediaImagery/frostcity.jpeg");
     background-color: rgb(0, 126, 164);
+}
+
+.mainfront {
+    background-image: url("../MediaImagery/frostcity.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-upPage {
+    background-image: url("../MediaImagery/cavepunk.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -8,7 +17,13 @@ body {
 h1 {
     font-weight: bold;
     font-size: 100px;
-    color: rgb(0, 105, 170);
+}
+
+.MainTitle {color: rgb(0, 105, 170);}
+
+.mainSign {
+    font-size: 50px;
+    color: white;
 }
 
 /*COLOR Classes section*/
@@ -25,7 +40,10 @@ h1 {
 .linkcolorblue {color: rgb(10, 175, 210);}
 .headblue /*Heading color for Escape The Frost titles*/{color: rgb(0, 105, 170);}
 .linkunderlineblue {text-decoration-color:rgb(0, 0, 255);}
+.blue7 {color: rgb(0, 0, 103);}
+.blue8 {color: rgb(252, 122, 0);}
 /*Color Classes section close*/
+
 
 .lore-description {
     font-size: 35px;
@@ -40,7 +58,7 @@ h1 {
     padding-left: 100px;
 }
 
-.aligncenter1 {text-align: center;}
+#aligncenter1 {text-align: center;}
 
 .button {
     width: 40px;
@@ -112,3 +130,21 @@ a {
 }
 /*anchor text closer*/
 
+/*Sign Up Section*/
+.mainSign {
+    display: block;
+    font-family: fantasy;
+    padding: 6px 20px 10px 30px;
+}
+
+.Stylin {
+    font-family: sans-serif;
+    color: rgb(50, 100, 240 );
+    font-size: 40px;
+    border: 5px ridge rgb(4, 0, 41);
+    background-color: rgb(0, 32, 92);
+    border-radius: 30px;
+    padding: 10px 15px 15px 15px;
+    margin: 25px auto;
+    display: block;
+}
