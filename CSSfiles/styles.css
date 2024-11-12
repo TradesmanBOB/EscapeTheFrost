@@ -145,6 +145,41 @@ a {
     background-color: rgb(0, 32, 92);
     border-radius: 30px;
     padding: 10px 15px 15px 15px;
-    margin: 25px auto;
+    margin: 25px 600px 25px;
     display: block;
+}
+
+
+#name, #email, #password {
+    height: 35px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(53, 208, 231);
+    border: 5px ridge rgb(31, 143, 255);
+    border-radius: 30px;
+}
+
+#email {
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+.emailname {
+    margin-left: 60px;
+    display: inline-block;
+}
+
+#password {
+    margin-left: 20px;
+}
+
+#password, #email, #name {
+    padding: 0px 10px;
+}
+
+.subtitleSignup {
+    font-size: 50px;
+    color: rgb(31, 143, 255);
+    margin-bottom: 50px;
 }
