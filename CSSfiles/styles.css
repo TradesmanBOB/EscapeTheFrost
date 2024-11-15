@@ -73,10 +73,10 @@ h1 {
 }
 
 #AboutMeBody {
-    width: 900px;            /* Set the container width */
-    height: 350px;           /* Set the container height */
+    /* width: 900px;            
+    height: 350px;            */
     padding: 20px 30px 20px;
-    padding-left: 625px;           /* Add padding around the content (optional) */
+    /* padding-left: 625px;           */
     text-align: center;      /* Horizontally center the text */
     display: flex;           /* Use flexbox for centering */
     justify-content: center; /* Centers text horizontally */
@@ -89,10 +89,10 @@ h1 {
 }
 
 .Developer {
-    width: 900px;        /* Narrow width */
-    height: 350px;       /* Fixed height */
+    /* width: 900px;       
+    height: 350px;        */
     padding-top: 10px;   /* Optional padding on top */
-    padding-left: 625px;
+    /* padding-left: 625px; */
     text-align: center;  /* Horizontally centers the text */
     line-height: 1.5;    /* Increases line spacing */
     display: flex;       /* Use flexbox for vertical centering */
@@ -104,9 +104,11 @@ h1 {
 }
 
 .aboutpage {
-    position: relative;
+    /* position: relative; */
+    margin-left: 20%;
     text-align: center;
-    width: 100%;  /* Make sure it takes full width */
+    max-width: 80%;
+    /* width: 100%;  Make sure it takes full width */
     padding-top: 60px;  /* Add top padding if needed */
 }
 
@@ -200,7 +202,6 @@ a {
     margin: 25px 600px 25px;
     display: block;
 }
-
 
 #name, #email, #password {
     height: 35px;
