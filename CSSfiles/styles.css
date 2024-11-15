@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(0, 126, 164);
+    background-color: rgb(219, 0, 0);
 }
 
 .mainfront {
@@ -21,19 +21,18 @@ h1 {
 
 .MainTitle {color: rgb(0, 105, 170);}
 
+.About {color:rgba(140, 255, 0, 0.77)}
+
 .AboutMe {
     background-image: url('../MediaImagery/FrostSurvivor.png');
     background-size: cover; /* Ensures the image covers the entire page */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
     margin: 0; /* Remove any default margin */
-    height: 2128px; /* Ensures the body takes up the full viewport height */
-    width: 2101px; /*Ensures the body takes up the full viewport width*/
-    color: rgb(229, 229, 229);
     font-size: 35px;
     font-weight: bold;
-    padding: 0 100px;
     font-family: serif;
+    background-attachment: fixed;
 }
 
 .mainSign {
@@ -76,22 +75,24 @@ h1 {
 #AboutMeBody {
     width: 900px;            /* Set the container width */
     height: 350px;           /* Set the container height */
-    padding: 20px;           /* Add padding around the content (optional) */
+    padding: 20px 30px 20px;
+    padding-left: 625px;           /* Add padding around the content (optional) */
     text-align: center;      /* Horizontally center the text */
     display: flex;           /* Use flexbox for centering */
     justify-content: center; /* Centers text horizontally */
     align-items: center;     /* Centers text vertically */
     font-size: 24px;         /* Set text size */
     line-height: 1.5;
-    overflow: hidden;        /* Hide overflowing content (if any) */
+    font-weight: bold;
+    overflow: hidden; /* Hide overflowing content (if any) */
+    color: rgb(126, 229, 0);
 }
 
 .Developer {
     width: 900px;        /* Narrow width */
     height: 350px;       /* Fixed height */
-    padding-top: 20px;   /* Optional padding on top */
+    padding-top: 10px;   /* Optional padding on top */
     padding-left: 625px;
-    padding-bottom: 20px;/* Optional padding on bottom */
     text-align: center;  /* Horizontally centers the text */
     line-height: 1.5;    /* Increases line spacing */
     display: flex;       /* Use flexbox for vertical centering */
@@ -99,6 +100,14 @@ h1 {
     align-items: center; /* Centers text vertically */
     font-size: 18px;
     overflow: hidden;
+    color: rgb(126, 229, 0);
+}
+
+.aboutpage {
+    position: relative;
+    text-align: center;
+    width: 100%;  /* Make sure it takes full width */
+    padding-top: 60px;  /* Add top padding if needed */
 }
 
 #aligncenter1 {text-align: center;}
