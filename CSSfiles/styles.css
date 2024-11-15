@@ -21,6 +21,21 @@ h1 {
 
 .MainTitle {color: rgb(0, 105, 170);}
 
+.AboutMe {
+    background-image: url('../MediaImagery/FrostSurvivor.png');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    margin: 0; /* Remove any default margin */
+    height: 2128px; /* Ensures the body takes up the full viewport height */
+    width: 2101px; /*Ensures the body takes up the full viewport width*/
+    color: rgb(229, 229, 229);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 0 100px;
+    font-family: serif;
+}
+
 .mainSign {
     font-size: 50px;
     color: white;
@@ -56,6 +71,34 @@ h1 {
     font-size: 35px;
     font-weight: bold;
     padding-left: 100px;
+}
+
+#AboutMeBody {
+    width: 900px;            /* Set the container width */
+    height: 350px;           /* Set the container height */
+    padding: 20px;           /* Add padding around the content (optional) */
+    text-align: center;      /* Horizontally center the text */
+    display: flex;           /* Use flexbox for centering */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;     /* Centers text vertically */
+    font-size: 24px;         /* Set text size */
+    line-height: 1.5;
+    overflow: hidden;        /* Hide overflowing content (if any) */
+}
+
+.Developer {
+    width: 900px;        /* Narrow width */
+    height: 350px;       /* Fixed height */
+    padding-top: 20px;   /* Optional padding on top */
+    padding-left: 625px;
+    padding-bottom: 20px;/* Optional padding on bottom */
+    text-align: center;  /* Horizontally centers the text */
+    line-height: 1.5;    /* Increases line spacing */
+    display: flex;       /* Use flexbox for vertical centering */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    font-size: 18px;
+    overflow: hidden;
 }
 
 #aligncenter1 {text-align: center;}
