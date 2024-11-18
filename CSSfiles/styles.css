@@ -9,7 +9,7 @@ body {
     background-size: cover;
 }
 
-.sign-upPage {
+.sign-upPage, .LoginPage {
     background-image: url("../MediaImagery/cavepunk.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +25,6 @@ h1 {
 /*anchor section text decor remover*/
 a {text-decoration: none;}
 /*anchor text closer*/
-
 
 /* Mainbackgrounding and general CSS Closing */
 
