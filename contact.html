@@ -4,47 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
-    <title>ETF.AboutMe</title>
+    <title>ETF Contact Page</title>
 </head>
 <body class="AboutMe">
-    <div class="aboutpage" id="aligncenter1">
-    <h1 class="About">About Us</h1>
-        <p id="AboutMeBody">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula, turpis id laoreet laoreet, felis velit consequat ante, in gravida neque enim et lorem. 
-            Maecenas euismod nisl ut mi cursus, sit amet tempus sapien auctor. Sed hendrerit magna a felis eleifend, at posuere arcu tincidunt. 
-            Fusce auctor tortor nec libero condimentum, vitae consectetur odio faucibus. Integer sollicitudin sem at augue pharetra, vel cursus nunc dictum.
-
-            Cras consequat, felis vitae tempor gravida, tortor ante feugiat justo, non viverra felis arcu non ipsum. Quisque accumsan tincidunt fermentum. 
-            Vivamus ullamcorper justo at velit vehicula, et placerat nunc convallis. Sed euismod turpis nec ante auctor, at aliquam ipsum dictum. 
-            Ut non malesuada ante. In auctor felis vel ultricies gravida. Phasellus nec posuere enim. Mauris eget felis mi.
-        </p>
-        <ul>
-            <li>
-                <p class="NameBox">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a eros eget nulla placerat auctor. Nulla facilisi. 
-                    Morbi vitae tempor enim. Sed mollis ligula vel metus vulputate, ac pretium lectus iaculis. 
-                    Duis varius, arcu id rhoncus mollis, felis dui tincidunt felis, nec venenatis leo tortor ac metus.
-        
-                    Fusce et ante leo. Praesent sit amet ligula eget sapien eleifend pretium. Aliquam erat volutpat. 
-                    Ut lacinia malesuada velit, at volutpat metus convallis id. Sed eget nisi sit amet felis sollicitudin tincidunt. 
-                    Nunc ac nibh id elit sodales mollis.
-                </p>
-            </li>
-            <li>
-                <p><p class="Textbox">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a eros eget nulla placerat auctor. Nulla facilisi. 
-                    Morbi vitae tempor enim. Sed mollis ligula vel metus vulputate, ac pretium lectus iaculis. 
-                    Duis varius, arcu id rhoncus mollis, felis dui tincidunt felis, nec venenatis leo tortor ac metus.
-        
-                    Fusce et ante leo. Praesent sit amet ligula eget sapien eleifend pretium. Aliquam erat volutpat. 
-                    Ut lacinia malesuada velit, at volutpat metus convallis id. Sed eget nisi sit amet felis sollicitudin tincidunt. 
-                    Nunc ac nibh id elit sodales mollis.
-                </p></p>
-            </li>
-        </ul>
+    <div class="contactpage" id="aligncenter1">
+        <h1 class="About">Contact Us</h1>
+        <div class="containingcontainer">
+            <div class="container" id="aligncenter1">
+                  <form action="action_page.php">
+          
+                  <label for="fuser">Username</label>
+                  <input type="text" id="fuser" name="username" placeholder="Username..">
+          
+                  <label for="lemail">Email</label>
+                  <input type="text" id="lemail" name="email" placeholder="Email..">
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+                  <input type="submit" value="Submit" class="submit">
+                </form>
+            </div>
+        </div>
+    </div>
         <!-- add Java or link/anchor elements to move to each page -->
 
-            <button class="playbutton">
+            <button class="playbutton3">
                 <a class="contact" href="contact.html"_blank>
                 <strong>Contact Us</strong>
             </a></button>
@@ -55,12 +40,14 @@
                 <li class="bottomLeftlist" class="Frostpunk"><a href="index.html"_blank>The Front</a></li>
                 <!--below is a link to the actual Frostpunk store page-->
                 <li class="bottomLeftlist" class="Frostpunk"><a href="https://store.steampowered.com/app/323190/Frostpunk/"_blank>Frostpunk The Inspiration</a></li>
-                    <!--below is a link to the Google Doc Design form-->
+                    <!--below is a link to -->
                 <li class="bottomLeftlist" class="GDD"><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing"_blank>Game Design Document</a></li>
-                    <!--Below is a link to About Me-->
-                <li class="bottomLeftlist" class="AboutMe"><a href="About.html"_blank>(lorem ipsum) About Us</a></li> 
+                    <!--Below is a link to contact us-->
+                <li class="bottomLeftlist" class="AboutMe"><a href="About.html"_blank>(Lorem Ipsum) About Us</a></li> 
                     <!--Below is a link to join the discord-->                    
                 <li class="bottomLeftlist"><a href="https://discord.gg/jB3SC4pZTg"_blank>ETF Discord</a></li>
+                    <!--Create the Contact Page-->
+                <li><a href="contact.html">(Non-functional) Contact page</a></li>
             </ul>
         </div>
     </div>
