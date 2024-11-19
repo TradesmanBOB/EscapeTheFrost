@@ -9,7 +9,7 @@ body {
     background-size: cover;
 }
 
-.sign-upPage, .LoginPage {
+.sign-upPage, .loginpage {
     background-image: url("../MediaImagery/cavepunk.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,12 +47,12 @@ a {text-decoration: none;}
 /*Color Classes section close*/
 
 /* Landing Page Main CSS */
-.MainTitle {color: rgb(0, 105, 170);}
+.maintitle {color: rgb(0, 105, 170);}
 
-.mainSign {
+/* .mainsign {
     font-size: 50px;
     color: white;
-}
+}          What are you attached to? */    
 
 .lore-description {
     font-size: 35px;
@@ -62,23 +62,21 @@ a {text-decoration: none;}
     padding-left: 100px;
 }
 
-.ImportantNotice {
+.importantnotice {
     font-size: 35px;
     font-weight: bold;
     padding-left: 100px;
 }
 
 .frontpage {
-    margin-left: 10%;
-    max-width: 90%;
+    margin-left: 20%;
+    max-width: 80%;
 }
 
 /* Landing Page Main CSS Closing */
 
 /* Opening AboutMe */
-.About {color:rgb(27, 208, 3)}
-
-.AboutMe {
+.aboutme, .contactus {
     background-image: url('../MediaImagery/FrostSurvivor.png');
     background-size: cover; /* Ensures the image covers the entire page */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -90,7 +88,7 @@ a {text-decoration: none;}
     background-attachment: fixed;
 }
 
-#AboutMeBody {
+#aboutmebody {
     /* width: 900px;            
     height: 350px;            */
     padding: 20px 30px 20px;
@@ -107,7 +105,7 @@ a {text-decoration: none;}
     margin-top: -20px;
 }
 
-.Developer {
+.developer {
     /* width: 900px;       
     height: 350px;        */
     padding-top: 10px;   /* Optional padding on top */
@@ -139,8 +137,10 @@ a {text-decoration: none;}
                                         /* Page Change */
 
 /* contact page area */
-.About {
+.about {
     margin-top: -120px;
+    margin-top: -40px;
+    color: rgb(27, 208, 3);
 }
 
 .contactpage {
@@ -151,12 +151,9 @@ a {text-decoration: none;}
     color: rgb(255, 255, 255);
     border-radius: 50px; /* Rounded borders */
 }
-.About {
-    margin-top: -40px;
-}
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+  input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
@@ -301,13 +298,13 @@ a, a:visited, a:hover, a:active {
                                         /* Page Change */
 
 /*Sign Up Section*/
-.mainSign {
+.mainsign {
     display: block;
     font-family: fantasy;
     padding: 6px 20px 10px 30px;
 }
 
-.Stylin {
+.stylin {
     font-family: sans-serif;
     color: rgb(50, 100, 240 );
     font-size: 40px;
