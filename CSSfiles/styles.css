@@ -58,13 +58,19 @@ a {text-decoration: none;}
     font-size: 35px;
     font-weight: bold;
     color: rgba(0, 0, 182, 0.784);
-    padding: 0 100px;
+    justify-content: center;
+    padding-left: 100px;
 }
 
 .ImportantNotice {
     font-size: 35px;
     font-weight: bold;
     padding-left: 100px;
+}
+
+.frontpage {
+    margin-left: 10%;
+    max-width: 90%;
 }
 
 /* Landing Page Main CSS Closing */
@@ -98,6 +104,7 @@ a {text-decoration: none;}
     font-weight: bold;
     overflow: hidden; /* Hide overflowing content (if any) */
     color: rgb(27, 208, 3);
+    margin-top: -20px;
 }
 
 .Developer {
@@ -229,8 +236,8 @@ input[type=text], select, textarea {
 
 
 /* .button {
-    width: 40px;
-/* }                what is .button attached to?? */
+    width: 40px;}
+                    what is .button attached to?? */
 
 /*Playbuttons section*/
  .playbutton {
