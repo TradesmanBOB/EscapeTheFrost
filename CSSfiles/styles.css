@@ -9,7 +9,7 @@ body {
     background-size: cover;
 }
 
-.sign-upPage, .loginpage {
+.sign-uppage, .loginpage {
     background-image: url("../MediaImagery/cavepunk.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,7 +20,9 @@ h1 {
     font-size: 100px;
 }
 
-#aligncenter1 {text-align: center;}
+.aligncenter1 {
+    text-align: center;
+}
 
 /*anchor section text decor remover*/
 a {text-decoration: none;}
@@ -212,6 +214,7 @@ a {text-decoration: none;}
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 }
+
  .playbutton3 {
     font-family: sans-serif;
     color: rgb(50, 100, 240);
@@ -264,6 +267,36 @@ a {text-decoration: none;}
     text-decoration: underline;
     text-decoration-color:rgb(10, 175, 210);
 }
+
+.playbutton4 {
+    font-family: sans-serif;
+    color: rgb(50, 100, 240);
+    font-size: 30px;
+    border: 5px ridge rgb(3, 5, 17);
+    background-color: rgb(0, 30, 75);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 20px 740px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: double;
+}
+
+.playbutton5 {
+    font-family: sans-serif;
+    color: rgb(42, 172, 202);
+    font-size: 30px;
+    border: 5px ridge rgb(3, 5, 17);
+    background-color: rgb(0, 30, 75);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 20px 740px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color:rgb(10, 175, 210);
+}
+
 a, a:visited, a:hover, a:active {
     color: inherit;
   }
@@ -277,6 +310,16 @@ a, a:visited, a:hover, a:active {
     position: fixed;
     top: 0;
     padding-left: 2px;
+}
+
+#frontnav {
+    width: 17%;
+    background-color: rgba(100, 100, 100, 0.1);
+    list-style: none;
+    position: fixed;
+    top: 0;
+    padding-left: 2px;
+    margin-left: -340px;
 }
 
 .list-nav a {
@@ -351,3 +394,11 @@ a, a:visited, a:hover, a:active {
 }
 
 /* Sign Up Closing */
+
+/* Login page opening 
+
+*/
+
+#buttonlogs {
+    color: white;
+}

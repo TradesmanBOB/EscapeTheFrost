@@ -11,45 +11,42 @@
         <nav>
             <div>
                 <ul class="list-nav">
-                    <li class="bottomLeftlist" class="Frostpunk"><a href="index.html"_blank>The Front</a></li>
-                    <!--below is a link to the actual Frostpunk store page-->
-                    <li class="bottomLeftlist" class="Frostpunk"><a href="https://store.steampowered.com/app/323190/Frostpunk/"_blank>Frostpunk The Inspiration</a></li>
-                        <!--below is a link to -->
-                    <li class="bottomLeftlist" class="GDD"><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing"_blank>Game Design Document</a></li>
-                        <!-- Login Link -->
+                    <li class="bottomLeftlist" class="Frostpunk"><a href="index.html" target="_blank">The Front</a></li>
+                    <li class="bottomLeftlist" class="Frostpunk"><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">Frostpunk The Inspiration</a></li>
+                    <li class="bottomLeftlist" class="GDD"><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">Game Design Document</a></li>
                     <li><a href="Login.html">Login!</a></li>
-                        <!--Below is a link to About Us-->
-                    <li class="bottomLeftlist" class="aboutme"><a href="About.html"_blank>(Lorem Ipsum) About Us</a></li> 
-                        <!--Create the Contact Page-->
+                    <li class="bottomLeftlist" class="aboutme"><a href="About.html" target="_blank">(Lorem Ipsum) About Us</a></li> 
                     <li><a href="contact.html">(Non-functional) Contact page</a></li>
-                        <!--Below is a link to join the discord-->                    
-                    <li class="bottomLeftlist"><a href="https://discord.gg/jB3SC4pZTg"_blank>ETF Discord</a></li>
+                    <li class="bottomLeftlist"><a href="https://discord.gg/jB3SC4pZTg" target="_blank">ETF Discord</a></li>
                 </ul>
             </div>
         </nav>
     </header>    
+
     <div class="mainsign">
-        <h1 id="aligncenter1" class="blue7">We welcome your return Scavenger!</h1>
-        <p id="aligncenter1", class="subtitleSignup">Are you prepared for more Scavenging today, Scavenger?</p>
-            <!--Username below reference-->
-                <!--Email below reference-->
-            <div class="stylin" id="aligncenter1">
+        <h1 class="aligncenter1 blue7">We welcome your return Scavenger!</h1>
+        <p class="aligncenter1 subtitleSignup">Are you prepared for more Scavenging today, Scavenger?</p>
+
+        <form action="/login" method="POST">
+            <div class="stylin aligncenter1">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
             </div>
-                <!--password below reference-->
-            <div class="stylin" id="aligncenter1">
+            <div class="stylin aligncenter1">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </div>
-            <!--Login below reference-->
-            <button class="playbutton2" class="aligncenter1" type="submit" >
-                <a href="Login.html"_blank>Already have a character? Click here.</a></button>
-            <!--Submit Record reference-->
-            <button class="playbutton" class="aligncenter1" type="submit">
-                <a class="sign-up" href="https://store.steampowered.com/app/323190/Frostpunk/"_blank>
-                    <strong>Enter The City</strong></a></button>
         </form>
+
+        <div id="buttonLogs">
+            <!-- Navigation links outside the form -->
+            <a href="SignUp.html" class="playbutton5 aligncenter1">
+                <strong>New Character? Click here!</strong>
+            </a>
+            <a class="playbutton4 aligncenter1" href="https://store.steampowered.com/app/323190/Frostpunk/">
+                <strong>Enter The City</strong>
+            </a>
+        </div>
     </div>
 </body>
 </html>
