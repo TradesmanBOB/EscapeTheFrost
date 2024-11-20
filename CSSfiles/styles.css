@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     font-size: 100px;
 }
 
@@ -25,7 +25,7 @@ h1 {
 }
 
 .strong {
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
 }
 
 /*anchor section text decor remover*/
@@ -68,7 +68,7 @@ a {text-decoration: none;}
     --font1: serif; /* Main use font */ 
     --font2: 'fantasy';  /* 2nd font */
     --font3: sans-serif; /* 3rd font */
-
+    --font--weight-bold: 850; /* font weight bold */
 
 
 
@@ -87,7 +87,7 @@ a {text-decoration: none;}
 
 .list-nav a {
     color: var(--nav-bluetext);
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
 }
 
 .list-nav a:hover {
@@ -99,7 +99,7 @@ a {text-decoration: none;}
 /* Landing Page Main CSS */
 .lore-description {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     color: var(--frontfirstparagraph);
     justify-content: center;
     padding-left: 100px;
@@ -107,7 +107,7 @@ a {text-decoration: none;}
 
 .importantnotice {
     font-size: 35px;
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     padding-left: 100px;
     color: var(--black);
 }
@@ -126,8 +126,8 @@ a {text-decoration: none;}
     background-position: center center; /* Centers the image */
     margin: 0; /* Remove any default margin */
     font-size: 35px;
-    font-weight: bold;
-    font-family: serif;
+    font-weight: var(--font--weight-bold);
+    font-family: var(font1);
     background-attachment: fixed;
 }
 
@@ -142,7 +142,7 @@ a {text-decoration: none;}
     align-items: center;     /* Centers text vertically */
     font-size: 24px;         /* Set text size */
     line-height: 1.5;
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     overflow: hidden; /* Hide overflowing content (if any) */
     color: var(--aboutbody);
     margin-top: -20px;
@@ -237,7 +237,7 @@ a {text-decoration: none;}
     font-size: 20px;
 }
 #fuser, #lemail {
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     border-radius: 30px;
 }
 #lemail {
@@ -246,7 +246,7 @@ a {text-decoration: none;}
 #subject {
     font-size: 20px;
     color: var(--black);
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     background-color: var(--white));
     border-radius: 30px;
 }
@@ -255,7 +255,7 @@ a {text-decoration: none;}
 
 /*Playbuttons section*/
 .playbutton3 {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--nav-bluetext);
     font-size: 30px;
     border: 5px ridge var(--borderline);
@@ -270,7 +270,7 @@ a {text-decoration: none;}
 }
 
 .playbutton {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--nav-bluetext);
     font-size: 30px;
     border: 5px ridge var(--borderline);
@@ -284,7 +284,7 @@ a {text-decoration: none;}
 }
 
 .playbutton2 {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--linklinetextcolor);
     font-size: 20px;
     border: 5px ridge var(--borderline);
@@ -298,7 +298,7 @@ a {text-decoration: none;}
 }
 
 .playbutton4 {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--nav-bluetext);
     font-size: 30px;
     border: 5px ridge var(--borderline);
@@ -309,12 +309,13 @@ a {text-decoration: none;}
     display: block;
     margin-bottom: 20px;
     text-decoration: double;
+    font-weight: var(--font--weight-bold);
 }
 
 .playbutton5 {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--colorButton5);
-    font-size: 30px;
+    font-size: 20px;
     border: 5px ridge var(--borderline);
     background-color: var(--borderbackground);
     border-radius: 50px;
@@ -324,12 +325,14 @@ a {text-decoration: none;}
     margin-bottom: 20px;
     text-decoration: underline;
     text-decoration-color:var(--linklinetextcolor);
+    font-weight: var(--font--weight-bold);
 }
 
 .playbutton5:visited, .playbutton5:hover, .playbutton5:active {
-    color: rgb(42, 172, 202);
+    color: var(--colorButton5);
   }
-/*Playbuttons section close*/
+
+  /*Playbuttons section close*/
 
 /*Navigation Menu*/
 .list-nav {
@@ -353,9 +356,9 @@ a {text-decoration: none;}
 
 .list-nav a {
     color: var(--navanchorcolor);
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     font-size: 25px;
-    font-family: fantasy;
+    font-family: var(--font2);
     text-align: left;
     display: block;
     padding: 6px 20px 10px 30px;
@@ -370,12 +373,12 @@ a {text-decoration: none;}
 /*Sign Up Section*/
 .mainsign {
     display: block;
-    font-family: fantasy;
+    font-family: var(--font2);
     padding: 6px 20px 10px 30px;
 }
 
 .stylin {
-    font-family: sans-serif;
+    font-family: var(--font3);
     color: var(--nav-bluetext);
     font-size: 40px;
     border: 5px ridge var(--signupBordercolorinsert);
@@ -390,7 +393,7 @@ a {text-decoration: none;}
     height: 35px;
     width: 200px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
     background-color: var(--signupinsertboxcolor);
     border: 5px ridge var(--signupinsertboxborder);
     border-radius: 30px;
@@ -412,7 +415,7 @@ a {text-decoration: none;}
 
 #password, #email, #name {
     padding: 0px 10px;
-    font-weight: bold;
+    font-weight: var(--font--weight-bold);
 }
 
 #signuptitle {
