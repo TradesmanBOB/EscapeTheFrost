@@ -65,9 +65,14 @@ a {text-decoration: none;}
     --signupinsertboxborder: rgb(31, 143, 255);
     --signuphead2color: rgb(31, 143, 255);
     --signuphead1color: rgb(94, 207, 241);
-    --font1: sans-serif; /* Main use font */ 
+    --font1: serif; /* Main use font */ 
     --font2: 'fantasy';  /* 2nd font */
-    --font3: 
+    --font3: sans-serif; /* 3rd font */
+
+
+
+
+
 }
 
 
@@ -321,9 +326,9 @@ a {text-decoration: none;}
     text-decoration-color:var(--linklinetextcolor);
 }
 
-a, a:hover, a:active {
-    color: inherit;
-}
+.playbutton5:visited, .playbutton5:hover, .playbutton5:active {
+    color: rgb(42, 172, 202);
+  }
 /*Playbuttons section close*/
 
 /*Navigation Menu*/
