@@ -1,6 +1,6 @@
 /* Mainbackgrounding and general CSSing */
 body {
-    background-color: rgb(219, 0, 0);
+    background-color: var(--background-red);
 }
 
 .mainfront {
@@ -24,42 +24,78 @@ h1 {
     text-align: center;
 }
 
+.strong {
+    font-weight: bold;
+}
+
 /*anchor section text decor remover*/
 a {text-decoration: none;}
 /*anchor text closer*/
 
-/* Mainbackgrounding and general CSS Closing */
+/* Multipage CSS Closing */
 
-/*COLOR Classes section*/
-.blue1 /*Navigation Blue*/{color: rgb(1, 92, 237);}
-.blue2 /*Navigation background blue*/ {color: rgb(0, 0, 103);}
-.blue3 /*Objective Section Blue*/{color: rgba(0, 0, 182, 0.784);}
-.blue4 /*Button backgrund color */{background-color: rgb(0, 30, 75);}
-.blue5 /*Button Text color*/{color: rgb(50, 100, 240);}
-.blue6 /*Link Blue*/ {color: rgb(10, 175, 210);}
-.borderdarkblue {border: 5px ridge rgb(3, 5, 17);}
-.navcolorbackground {background-color: rgba(100, 100, 100, 0.1);}
-.navtextcolor {color: rgb(1, 92, 237);}
-.navbackhovercolor {background-color: rgb(0, 0, 103);}
-.linkcolorblue {color: rgb(10, 175, 210);}
-.headblue /*Heading color for Escape The Frost titles*/{color: rgb(0, 105, 170);}
-.linkunderlineblue {text-decoration-color:rgb(0, 0, 255);}
-.blue7 {color: rgb(0, 0, 103);}
-.blue8 {color: rgb(252, 122, 0);}
+/* Color Classes section*/
+:root {
+    --background-red: rgb(219, 0, 0); /* Primary Red */
+    --nav-bluetext: rgb(50, 100, 240);  /* Dark Blue */
+    --background-navblue: rgb(0, 0, 103);  /* Light Blue */
+    --green-textcolor: rgb(27, 208, 3);  /* Green Accent */
+    --orange-accent: rgb(252, 122, 0);  /* Orange Accent */
+    --neutral-dark: rgb(4, 6, 41);  /* Neutral Dark */
+    --main-title: rgb(0, 105, 170); /* MainTitle */
+    --linklinetextcolor: rgb(10, 175, 210); /* LinkLine Coloring for underlined linked text */
+    --navgreybackground: rgba(100, 100, 100, 0.3); /* grey box containing nav bar */
+    --aboutbody: rgb(27, 208, 3); 
+    --developerorange: rgb(208, 92, 3);
+    --white: rgb(255, 255, 255); /* bruh just white */
+    --contactsubmit: rgb(4, 170, 109);
+    --contactsubmithover: rgb(27, 107, 31);
+    --containerboxcontact: rgb(204, 204, 204);
+    --container: rgba(75, 75, 75, 0.443);
+    --frontfirstparagraph: rgba(0, 0, 182, 0.784);
+    --black: rgb(0, 0, 0); /* bruh just black */
+    --borderbackground: rgb(0, 30, 75); /* bordertext uses the navbluetextvar */
+    --borderline: rgb(3, 5, 17);
+    --buttonbackgroundcolor: rgb(50, 100, 240);
+    --colorButton5: rgb(42, 172, 202);
+    --navanchorcolor: rgb(1, 92, 237);
+    --signupBordercolorinsert: rgb(4, 0, 41);
+    --signupbackgroundinsert: rgb(0, 32, 92);
+    --signupinsertboxcolor: rgb(53, 208, 231);
+    --signupinsertboxborder: rgb(31, 143, 255);
+    --signuphead2color: rgb(31, 143, 255);
+    --signuphead1color: rgb(94, 207, 241);
+    --font1: sans-serif; /* Main use font */ 
+    --font2: 'fantasy';  /* 2nd font */
+    --font3: 
+}
+
+
+
+
+
+.maintitle {color: var(--main-title);}
+
+.list-nav {
+    background-color: var(--navgreybackground);
+}
+
+.list-nav a {
+    color: var(--nav-bluetext);
+    font-weight: bold;
+}
+
+.list-nav a:hover {
+    background-color: var(--background-navblue);
+}
+
 /*Color Classes section close*/
 
 /* Landing Page Main CSS */
-.maintitle {color: rgb(0, 105, 170);}
-
-/* .mainsign {
-    font-size: 50px;
-    color: white;
-}          What are you attached to? */    
-
 .lore-description {
     font-size: 35px;
     font-weight: bold;
-    color: rgba(0, 0, 182, 0.784);
+    color: var(--frontfirstparagraph);
     justify-content: center;
     padding-left: 100px;
 }
@@ -68,13 +104,13 @@ a {text-decoration: none;}
     font-size: 35px;
     font-weight: bold;
     padding-left: 100px;
+    color: var(--black);
 }
 
 .frontpage {
     margin-left: 20%;
     max-width: 80%;
 }
-
 /* Landing Page Main CSS Closing */
 
 /* Opening AboutMe */
@@ -103,7 +139,7 @@ a {text-decoration: none;}
     line-height: 1.5;
     font-weight: bold;
     overflow: hidden; /* Hide overflowing content (if any) */
-    color: rgb(27, 208, 3);
+    color: var(--aboutbody);
     margin-top: -20px;
 }
 
@@ -119,7 +155,7 @@ a {text-decoration: none;}
     align-items: center; /* Centers text vertically */
     font-size: 20px;
     overflow: hidden;
-    color: rgb(208, 92, 3);
+    color: var(--developerorange);
 }
 
 .aboutpage {
@@ -136,13 +172,11 @@ a {text-decoration: none;}
 }
 /* Closing AboutMe */
 
-                                        /* Page Change */
-
 /* contact page area */
 .about {
     margin-top: -120px;
     margin-top: -40px;
-    color: rgb(27, 208, 3);
+    color: var(--aboutbody);
 }
 
 .contactpage {
@@ -150,7 +184,6 @@ a {text-decoration: none;}
     margin-left: 20%;
     max-width: 100% 50%;
     padding: 140px;  /* Add top padding if needed */
-    color: rgb(255, 255, 255);
     border-radius: 50px; /* Rounded borders */
 }
 
@@ -158,32 +191,32 @@ a {text-decoration: none;}
   input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
+    border: 1px solid var(--containerboxcontact); /* Gray border */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+}
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--contactsubmit);
+    color: var(--white);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
+}
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #1b6b1f;
+    background-color: var(--contactsubmithover);
   }
   
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
-    background-color: rgba(75, 75, 75, 0.443);
+    background-color: var(--container);
     padding: 20px;
     padding-bottom: 20px;
     margin: 0px 180px;
@@ -196,31 +229,32 @@ a {text-decoration: none;}
 }
 
   #fuser {
-    font-weight: bold;
     font-size: 20px;
-    border-radius: 20px;
 }
-
-#lemail {
+#fuser, #lemail {
     font-weight: bold;
-    font-size: 25px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
-
+#lemail {
+    font-size: 25px;
+}
 #subject {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: var(--black);
     font-weight: bold;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white));
     border-radius: 30px;
 }
 
- .playbutton3 {
+/* contact page closed */
+
+/*Playbuttons section*/
+.playbutton3 {
     font-family: sans-serif;
-    color: rgb(50, 100, 240);
+    color: var(--nav-bluetext);
     font-size: 30px;
-    border: 5px ridge rgb(3, 5, 17);
-    background-color: rgb(0, 30, 75);
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
     border-radius: 50px;
     padding: 10px 15px;
     margin: 0 auto;
@@ -230,22 +264,12 @@ a {text-decoration: none;}
     margin-bottom: -135px;
 }
 
-/* contact page closed */
-
-                                        /* Page Change */
-
-
-/* .button {
-    width: 40px;}
-                    what is .button attached to?? */
-
-/*Playbuttons section*/
- .playbutton {
+.playbutton {
     font-family: sans-serif;
-    color: rgb(50, 100, 240);
+    color: var(--nav-bluetext);
     font-size: 30px;
-    border: 5px ridge rgb(3, 5, 17);
-    background-color: rgb(0, 30, 75);
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
     border-radius: 50px;
     padding: 10px 15px;
     margin: 0 auto;
@@ -256,23 +280,23 @@ a {text-decoration: none;}
 
 .playbutton2 {
     font-family: sans-serif;
-    color: rgb(10, 175, 210);
+    color: var(--linklinetextcolor);
     font-size: 20px;
-    border: 5px ridge rgb(3, 5, 17);
-    background-color: rgb(0, 30, 75);
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
     border-radius: 30px;
     padding: 5px 10px;
     margin: 0 auto;
     display: block;
     text-decoration: underline;
-    text-decoration-color:rgb(10, 175, 210);
+    text-decoration-color:var(--linklinetextcolor);
 }
 
 .playbutton4 {
     font-family: sans-serif;
-    color: rgb(50, 100, 240);
+    color: var(--nav-bluetext);
     font-size: 30px;
-    border: 5px ridge rgb(3, 5, 17);
+    border: 5px ridge var(--borderline);
     background-color: rgb(0, 30, 75);
     border-radius: 50px;
     padding: 10px 15px;
@@ -284,28 +308,28 @@ a {text-decoration: none;}
 
 .playbutton5 {
     font-family: sans-serif;
-    color: rgb(42, 172, 202);
+    color: var(--colorButton5);
     font-size: 30px;
-    border: 5px ridge rgb(3, 5, 17);
-    background-color: rgb(0, 30, 75);
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
     border-radius: 50px;
     padding: 10px 15px;
     margin: 20px 740px;
     display: block;
     margin-bottom: 20px;
     text-decoration: underline;
-    text-decoration-color:rgb(10, 175, 210);
+    text-decoration-color:var(--linklinetextcolor);
 }
 
-a, a:visited, a:hover, a:active {
+a, a:hover, a:active {
     color: inherit;
-  }
+}
 /*Playbuttons section close*/
 
 /*Navigation Menu*/
 .list-nav {
     width: 17%;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: var(--navgreybackground);
     list-style: none;
     position: fixed;
     top: 0;
@@ -314,7 +338,7 @@ a, a:visited, a:hover, a:active {
 
 #frontnav {
     width: 17%;
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: var(--navgreybackground);
     list-style: none;
     position: fixed;
     top: 0;
@@ -323,7 +347,7 @@ a, a:visited, a:hover, a:active {
 }
 
 .list-nav a {
-    color: rgb(1, 92, 237);
+    color: var(--navanchorcolor);
     font-weight: bold;
     font-size: 25px;
     font-family: fantasy;
@@ -334,11 +358,9 @@ a, a:visited, a:hover, a:active {
 }
 
 .list-nav a:hover {
-    background-color: rgb(0, 0, 103);
+    background-color: var(--background-navblue);
 }
 /*Navigation Menu Close*/
-
-                                        /* Page Change */
 
 /*Sign Up Section*/
 .mainsign {
@@ -349,10 +371,10 @@ a, a:visited, a:hover, a:active {
 
 .stylin {
     font-family: sans-serif;
-    color: rgb(50, 100, 240 );
+    color: var(--nav-bluetext);
     font-size: 40px;
-    border: 5px ridge rgb(4, 0, 41);
-    background-color: rgb(0, 32, 92);
+    border: 5px ridge var(--signupBordercolorinsert);
+    background-color: var(--signupbackgroundinsert);
     border-radius: 30px;
     padding: 10px 15px 15px 15px;
     margin: 25px 600px 25px;
@@ -364,8 +386,8 @@ a, a:visited, a:hover, a:active {
     width: 200px;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgb(53, 208, 231);
-    border: 5px ridge rgb(31, 143, 255);
+    background-color: var(--signupinsertboxcolor);
+    border: 5px ridge var(--signupinsertboxborder);
     border-radius: 30px;
 }
 
@@ -385,22 +407,26 @@ a, a:visited, a:hover, a:active {
 
 #password, #email, #name {
     padding: 0px 10px;
+    font-weight: bold;
+}
+
+#signuptitle {
+    color: var(--signuphead1color);
 }
 
 .subtitleSignup {
     font-size: 50px;
-    color: rgb(31, 143, 255);
+    color: var(--signuphead2color);
     margin-bottom: 50px;
 }
 
-/* Make sure the bottom buttons are made bold  */
-
 /* Sign Up Closing */
 
-/* Login page opening 
-
-*/
-
+/* Login page opening */
 #buttonlogs {
     color: white;
 }
+
+.LoginBlue {color: var(--signuphead1color)}
+
+/*  Login Page Closing */
