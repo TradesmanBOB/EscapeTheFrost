@@ -69,15 +69,7 @@ a {text-decoration: none;}
     --font2: 'fantasy';  /* 2nd font */
     --font3: sans-serif; /* 3rd font */
     --font--weight-bold: 850; /* font weight bold */
-
-
-
-
 }
-
-
-
-
 
 .maintitle {color: var(--main-title);}
 
