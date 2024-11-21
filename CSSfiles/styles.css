@@ -435,11 +435,36 @@ a {text-decoration: none;}
 /*Navigation Menu Close*/
 
 /*Sign Up Section*/
+/* SignUp */
 .mainsign {
     display: block;
     font-family: var(--font2);
     padding: 6px 20px 10px 30px;
-    max-width: 100%;
+    max-width: 80%;
+    margin-left: 250px;
+}
+
+/* Login */
+.mainsign1 { 
+    display: block;
+    font-family: var(--font2);
+    padding: 6px 20px 10px 30px;
+    max-width: 80%;
+    margin-left: 320px;
+}
+
+/* buttons for signup */
+.sign-up {
+    margin: 30px 600px 50px;
+    padding: 15px;
+    margin-bottom: -20px;
+}
+
+/* buttons for login */
+.login-page {
+    margin: 50px 600px 20px;
+    padding: 15px;
+    margin-bottom: -20px;
 }
 
 .stylin {
@@ -450,7 +475,7 @@ a {text-decoration: none;}
     background-color: var(--signupbackgroundinsert);
     border-radius: 30px;
     padding: 10px 15px 15px 15px;
-    margin: 25px 600px 25px;
+    margin: 25px 480px 25px;
     display: block;
 }
 
@@ -485,6 +510,8 @@ a {text-decoration: none;}
 
 #signuptitle {
     color: var(--signuphead1color);
+    margin-top: 20px;
+    margin-bottom: -30px;
 }
 
 .subtitleSignup {
@@ -496,10 +523,14 @@ a {text-decoration: none;}
 /* Sign Up Closing */
 
 /* Login page opening */
-#buttonlogs {
-    color: white;
+ .buttonlogs { /* SignUp */
+    color: rgb(255, 255, 255);
+    margin: 20px;
 }
+.buttonlogs1 { /* Login */
+    color: rgb(255, 255, 255);
 
+}
 .LoginBlue {color: var(--signuphead1color)}
 
 /*  Login Page Closing */
