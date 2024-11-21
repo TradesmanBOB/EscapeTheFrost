@@ -69,6 +69,7 @@ a {text-decoration: none;}
     --font2: fantasy;  /* 2nd font */
     --font3: sans-serif; /* 3rd font */
     --font--weight-bold: 850; /* font weight bold */
+    --discordblue: #012e68; /* Discord's blue */
 }
 
 .maintitle {color: var(--main-title);}
@@ -117,12 +118,14 @@ a {text-decoration: none;}
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center center; /* Centers the image */
     margin: 0; /* Remove any default margin */
-    font-size: 35px;
     font-weight: var(--font--weight-bold);
-    font-family: var(font1);
+    font-family: var(--font1);
     background-attachment: fixed;
 }
-
+.about {
+    margin-top: -25px;
+    margin-bottom: 4%;
+}
 #aboutmebody {
     /* width: 900px;            
     height: 350px;            */
@@ -132,12 +135,13 @@ a {text-decoration: none;}
     display: flex;           /* Use flexbox for centering */
     justify-content: center; /* Centers text horizontally */
     align-items: center;     /* Centers text vertically */
-    font-size: 24px;         /* Set text size */
+    font-size: 20px;         /* Set text size */
     line-height: 1.5;
     font-weight: var(--font--weight-bold);
     overflow: hidden; /* Hide overflowing content (if any) */
     color: var(--aboutbody);
-    margin-top: -20px;
+    margin-top: -40px;
+    margin-bottom: 6px;
 }
 
 .developer {
@@ -153,14 +157,17 @@ a {text-decoration: none;}
 }
 
 .aboutpage {
-    margin-left: 20%;
     text-align: center;
     max-width: 80%;
     padding-top: 60px;  /* Add top padding if needed */
 }
+.aboutdiv {
+    margin-left: 24%;
+}
 
 .aboutlist {
     list-style: none;
+    margin: 5px;
 }
 /* Closing AboutMe */
 
@@ -243,33 +250,54 @@ a {text-decoration: none;}
 /* contact page closed */
 
 /*Playbuttons section*/
-
-.playbutton {
+/* adjusts the signup button on index page */
+.playbutton a{
     font-family: var(--font3);
     color: var(--nav-bluetext);
     font-size: 30px;
-    border: 5px ridge var(--borderline);
-    background-color: var(--borderbackground);
     border-radius: 50px;
     padding: 10px 15px;
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
     text-decoration: double;
-}
+    font-weight: bold;
 
-.playbutton2 {
+
+}
+/* adjusts the login button on index page */
+.playbutton2 a{ 
     font-family: var(--font3);
     color: var(--linklinetextcolor);
     font-size: 20px;
-    border: 5px ridge var(--borderline);
-    background-color: var(--borderbackground);
+    background-color: transparent;
     border-radius: 30px;
     padding: 5px 10px;
     margin: 0 auto;
     display: block;
     text-decoration: underline;
     text-decoration-color:var(--linklinetextcolor);
+
+
+}
+
+/* adjusts the signup button on index page */
+.playbutton {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: 5px ridge var(--borderline);
+    padding-bottom: -200px;
+}
+
+/* adjusts the login button on index page */
+.playbutton2 {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: 5px ridge var(--borderline);
+    display: block;
+    margin-top: 20px;
+    margin-left: 580px;
+
 }
 
 .playbutton3 {
@@ -317,10 +345,57 @@ a {text-decoration: none;}
     text-decoration-color:var(--linklinetextcolor);
     font-weight: var(--font--weight-bold);
 }
-
 .playbutton5:visited, .playbutton5:hover, .playbutton5:active {
     color: var(--colorButton5);
 }
+
+    /* Playbuttons Extended */
+/* adjusts the button on About page */
+.playbutton6 a{
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: double;
+    font-weight: var(--font--weight-bold);
+    color: rgb(81, 148, 230);
+    border: var(--black);
+}
+
+.playbutton6 {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: ridge var(--borderline);
+    padding-bottom: -200px;
+    color: var(--borderbackground);
+}
+
+.playbutton7 a{
+    font-family: var(--font3);
+    color: var(--discordblue);
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: double;
+    font-weight: var(--font--weight-bold);
+    border: var(--background-red); /* makes another line in the box */
+} 
+
+.playbutton7 {
+    background-color: var(--linklinetextcolor);
+    border-radius: 50px;
+    border: ridge var(--borderline);
+    display: block;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
   /*Playbuttons section close*/
 
 /*Navigation Menu*/
@@ -364,6 +439,7 @@ a {text-decoration: none;}
     display: block;
     font-family: var(--font2);
     padding: 6px 20px 10px 30px;
+    max-width: 100%;
 }
 
 .stylin {
