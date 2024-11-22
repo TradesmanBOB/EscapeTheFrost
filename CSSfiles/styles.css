@@ -122,6 +122,11 @@ a {text-decoration: none;}
     font-family: var(--font1);
     background-attachment: fixed;
 }
+
+.contact {
+    color: var(--nav-bluetext);
+}
+
 .about {
     margin-top: -25px;
     margin-bottom: 4%;
@@ -189,7 +194,6 @@ a {text-decoration: none;}
 /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
     border: 1px solid var(--containerboxcontact); /* Gray border */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -262,9 +266,8 @@ a {text-decoration: none;}
     margin-bottom: 20px;
     text-decoration: double;
     font-weight: bold;
-
-
 }
+
 /* adjusts the login button on index page */
 .playbutton2 a{ 
     font-family: var(--font3);
@@ -277,8 +280,6 @@ a {text-decoration: none;}
     display: block;
     text-decoration: underline;
     text-decoration-color:var(--linklinetextcolor);
-
-
 }
 
 /* adjusts the signup button on index page */
@@ -464,7 +465,7 @@ a {text-decoration: none;}
 .login-page {
     margin: 50px 600px 20px;
     padding: 15px;
-    margin-bottom: -20px;
+    margin-bottom: 20px;
 }
 
 .stylin {
@@ -474,43 +475,42 @@ a {text-decoration: none;}
     border: 5px ridge var(--signupBordercolorinsert);
     background-color: var(--signupbackgroundinsert);
     border-radius: 30px;
-    padding: 10px 15px 15px 15px;
     margin: 25px 480px 25px;
     display: block;
 }
 
 #name, #email, #password {
-    height: 35px;
-    width: 200px;
+    height: 50px;
+    width: 250px;
     font-size: 20px;
-    font-weight: var(--font--weight-bold);
     background-color: var(--signupinsertboxcolor);
     border: 5px ridge var(--signupinsertboxborder);
     border-radius: 30px;
+    display: block;
+    font-weight: var(--font--weight-bold);
 }
 
-#email {
-    margin-right: 50px;
-    margin-left: 80px;
+#name {
+    margin-left: 120px;
+    margin-bottom: 10px;
+    padding: 25px 150px 25px;
 }
 
-.emailname {
-    margin-left: 60px;
-    display: inline-block;
-}
+ #email {
+    margin-left: 120px;
+    padding: 0px 25px;
+    margin-bottom: 10px;
+} 
 
 #password {
-    margin-left: 20px;
-}
-
-#password, #email, #name {
-    padding: 0px 10px;
-    font-weight: var(--font--weight-bold);
+    margin-left: 120px;
+    padding: 0px 30px;
+    margin-bottom: 5px;
 }
 
 #signuptitle {
     color: var(--signuphead1color);
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: -30px;
 }
 
@@ -532,5 +532,14 @@ a {text-decoration: none;}
 
 }
 .LoginBlue {color: var(--signuphead1color)}
+
+.bottomtext {
+    margin-bottom: -7px;
+}
+
+.loginbottom {
+    margin-top: -10px;
+    margin-bottom: 133px;
+}
 
 /*  Login Page Closing */
