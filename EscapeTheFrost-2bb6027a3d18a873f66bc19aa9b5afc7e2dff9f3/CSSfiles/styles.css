@@ -1,0 +1,545 @@
+/* Mainbackgrounding and general CSSing */
+body {
+    background-color: var(--background-red);
+}
+
+.mainfront {
+    background-image: url("../MediaImagery/frostcity.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sign-uppage, .loginpage {
+    background-image: url("../MediaImagery/cavepunk.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: var(--font--weight-bold);
+    font-size: 100px;
+}
+
+.aligncenter1 {
+    text-align: center;
+}
+
+.strong {
+    font-weight: var(--font--weight-bold);
+}
+
+/*anchor section text decor remover*/
+a {text-decoration: none;}
+/*anchor text closer*/
+
+/* Multipage CSS Closing */
+
+/* Color Classes section*/
+:root {
+    --background-red: rgb(219, 0, 0); /* Primary Red */
+    --nav-bluetext: rgb(50, 100, 240);  /* Dark Blue */
+    --background-navblue: rgb(0, 0, 103);  /* Light Blue */
+    --green-textcolor: rgb(27, 208, 3);  /* Green Accent */
+    --orange-accent: rgb(252, 122, 0);  /* Orange Accent */
+    --neutral-dark: rgb(4, 6, 41);  /* Neutral Dark */
+    --main-title: rgb(0, 105, 170); /* MainTitle */
+    --linklinetextcolor: rgb(10, 175, 210); /* LinkLine Coloring for underlined linked text */
+    --navgreybackground: rgba(100, 100, 100, 0.3); /* grey box containing nav bar */
+    --aboutbody: rgb(27, 208, 3); 
+    --developerorange: rgb(208, 92, 3);
+    --white: rgb(255, 255, 255); /* bruh just white */
+    --contactsubmit: rgb(4, 170, 109);
+    --contactsubmithover: rgb(27, 107, 31);
+    --containerboxcontact: rgb(204, 204, 204);
+    --container: rgba(75, 75, 75, 0.443);
+    --frontfirstparagraph: rgba(0, 0, 182, 0.784);
+    --black: rgb(0, 0, 0); /* bruh just black */
+    --borderbackground: rgb(0, 30, 75); /* bordertext uses the navbluetextvar */
+    --borderline: rgb(3, 5, 17);
+    --buttonbackgroundcolor: rgb(50, 100, 240);
+    --colorButton5: rgb(42, 172, 202);
+    --navanchorcolor: rgb(1, 92, 237);
+    --signupBordercolorinsert: rgb(4, 0, 41);
+    --signupbackgroundinsert: rgb(0, 32, 92);
+    --signupinsertboxcolor: rgb(53, 208, 231);
+    --signupinsertboxborder: rgb(31, 143, 255);
+    --signuphead2color: rgb(31, 143, 255);
+    --signuphead1color: rgb(94, 207, 241);
+    --font1: serif; /* Main use font */ 
+    --font2: fantasy;  /* 2nd font */
+    --font3: sans-serif; /* 3rd font */
+    --font--weight-bold: 850; /* font weight bold */
+    --discordblue: #012e68; /* Discord's blue */
+}
+
+.maintitle {color: var(--main-title);}
+
+.list-nav {
+    background-color: var(--navgreybackground);
+}
+
+.list-nav a {
+    color: var(--nav-bluetext);
+    font-weight: var(--font--weight-bold);
+}
+
+.list-nav a:hover {
+    background-color: var(--background-navblue);
+}
+
+/*Color Classes section close*/
+
+/* Landing Page Main CSS */
+.lore-description {
+    font-size: 35px;
+    font-weight: var(--font--weight-bold);
+    color: var(--frontfirstparagraph);
+    justify-content: center;
+    padding-left: 100px;
+}
+
+.importantnotice {
+    font-size: 35px;
+    font-weight: var(--font--weight-bold);
+    padding-left: 100px;
+    color: var(--black);
+}
+
+.frontpage {
+    margin-left: 20%;
+    max-width: 80%;
+}
+/* Landing Page Main CSS Closing */
+
+/* Opening AboutMe */
+.aboutme, .contactus {
+    background-image: url('../MediaImagery/FrostSurvivor.png');
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center center; /* Centers the image */
+    margin: 0; /* Remove any default margin */
+    font-weight: var(--font--weight-bold);
+    font-family: var(--font1);
+    background-attachment: fixed;
+}
+
+.contact {
+    color: var(--nav-bluetext);
+}
+
+.about {
+    margin-top: -25px;
+    margin-bottom: 4%;
+}
+#aboutmebody {
+    /* width: 900px;            
+    height: 350px;            */
+    padding: 20px 30px 20px;
+    /* padding-left: 625px;           */
+    text-align: center;      /* Horizontally center the text */
+    display: flex;           /* Use flexbox for centering */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center;     /* Centers text vertically */
+    font-size: 20px;         /* Set text size */
+    line-height: 1.5;
+    font-weight: var(--font--weight-bold);
+    overflow: hidden; /* Hide overflowing content (if any) */
+    color: var(--aboutbody);
+    margin-top: -40px;
+    margin-bottom: 6px;
+}
+
+.developer {
+    padding-top: 10px;
+    text-align: center;  /* Horizontally centers the text */
+    line-height: 1.5;    /* Increases line spacing */
+    display: flex;       /* Use flexbox for vertical centering */
+    justify-content: center; /* Centers text horizontally */
+    align-items: center; /* Centers text vertically */
+    font-size: 20px;
+    overflow: hidden;
+    color: var(--developerorange);
+}
+
+.aboutpage {
+    text-align: center;
+    max-width: 80%;
+    padding-top: 60px;  /* Add top padding if needed */
+}
+.aboutdiv {
+    margin-left: 24%;
+}
+
+.aboutlist {
+    list-style: none;
+    margin: 5px;
+}
+/* Closing AboutMe */
+
+/* contact page area */
+.about {
+    margin-top: -120px;
+    margin-top: -40px;
+    color: var(--aboutbody);
+}
+
+.contactpage {
+    text-align: center;
+    margin-left: 20%;
+    max-width: 100% 50%;
+    padding: 140px;  /* Add top padding if needed */
+    border-radius: 50px; /* Rounded borders */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    border: 1px solid var(--containerboxcontact); /* Gray border */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: var(--contactsubmit);
+    color: var(--white);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: var(--contactsubmithover);
+  }
+  
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: var(--container);
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 0px 180px;
+  }
+
+.containingcontainer {
+    margin-top: -60px;
+    margin: 0px 180px;
+    background: none;
+}
+.coloringcontact {
+    color: var(--colorButton5);
+}
+
+  #fuser {
+    font-size: 20px;
+}
+#fuser, #lemail {
+    font-weight: var(--font--weight-bold);
+    border-radius: 30px;
+}
+#lemail {
+    font-size: 25px;
+}
+#subject {
+    font-size: 20px;
+    color: var(--black);
+    font-weight: var(--font--weight-bold);
+    background-color: var(--white);
+    border-radius: 30px;
+}
+/* contact page closed */
+
+/*Playbuttons section*/
+/* adjusts the signup button on index page */
+.playbutton a{
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: double;
+    font-weight: bold;
+}
+
+/* adjusts the login button on index page */
+.playbutton2 a{ 
+    font-family: var(--font3);
+    color: var(--linklinetextcolor);
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: underline;
+    text-decoration-color:var(--linklinetextcolor);
+}
+
+/* adjusts the signup button on index page */
+.playbutton {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: 5px ridge var(--borderline);
+    padding-bottom: -200px;
+}
+
+/* adjusts the login button on index page */
+.playbutton2 {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: 5px ridge var(--borderline);
+    display: block;
+    margin-top: 20px;
+    margin-left: 580px;
+
+}
+
+.playbutton3 {
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 30px;
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    text-decoration: double;
+    margin-bottom: -135px;
+}
+
+.playbutton4 /* This button for the Login&SignUp pages to switch between each other */ {
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 30px;
+    border: 5px ridge var(--borderline);
+    background-color: rgb(0, 30, 75);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 20px 740px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: double;
+    font-weight: var(--font--weight-bold);
+}
+
+.playbutton5 /* I a specifically for going to the frostpunk store on the Login&SignUp pages */ {
+    font-family: var(--font3);
+    color: var(--colorButton5);
+    font-size: 20px;
+    border: 5px ridge var(--borderline);
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 20px 740px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color:var(--linklinetextcolor);
+    font-weight: var(--font--weight-bold);
+}
+.playbutton5:visited, .playbutton5:hover, .playbutton5:active {
+    color: var(--colorButton5);
+}
+
+    /* Playbuttons Extended */
+/* adjusts the button on About page */
+.playbutton6 a{
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: double;
+    font-weight: var(--font--weight-bold);
+    color: rgb(81, 148, 230);
+    border: var(--black);
+}
+
+.playbutton6 {
+    background-color: var(--borderbackground);
+    border-radius: 50px;
+    border: ridge var(--borderline);
+    padding-bottom: -200px;
+    color: var(--borderbackground);
+}
+
+.playbutton7 a{
+    font-family: var(--font3);
+    color: var(--discordblue);
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: double;
+    font-weight: var(--font--weight-bold);
+    border: var(--background-red); /* makes another line in the box */
+} 
+
+.playbutton7 {
+    background-color: var(--linklinetextcolor);
+    border-radius: 50px;
+    border: ridge var(--borderline);
+    display: block;
+    margin-left: 500px;
+    margin-top: 15px;
+}
+
+  /*Playbuttons section close*/
+
+/*Navigation Menu*/
+.list-nav {
+    width: 17%;
+    background-color: var(--navgreybackground);
+    list-style: none;
+    position: fixed;
+    top: 0;
+    padding-left: 2px;
+}
+
+#frontnav {
+    width: 17%;
+    background-color: var(--navgreybackground);
+    list-style: none;
+    position: fixed;
+    top: 0;
+    padding-left: 2px;
+    margin-left: -340px;
+}
+
+.list-nav a {
+    color: var(--navanchorcolor);
+    font-weight: var(--font--weight-bold);
+    font-size: 25px;
+    font-family: var(--font2);
+    text-align: left;
+    display: block;
+    padding: 6px 20px 10px 30px;
+    text-decoration: none;
+}
+
+.list-nav a:hover {
+    background-color: var(--background-navblue);
+}
+/*Navigation Menu Close*/
+
+/*Sign Up Section*/
+/* SignUp */
+.mainsign {
+    display: block;
+    font-family: var(--font2);
+    padding: 6px 20px 10px 30px;
+    max-width: 80%;
+    margin-left: 250px;
+}
+
+/* Login */
+.mainsign1 { 
+    display: block;
+    font-family: var(--font2);
+    padding: 6px 20px 10px 30px;
+    max-width: 80%;
+    margin-left: 320px;
+}
+
+/* buttons for signup */
+.sign-up {
+    margin: 30px 600px 50px;
+    padding: 15px;
+    margin-bottom: -20px;
+}
+
+/* buttons for login */
+.login-page {
+    margin: 50px 600px 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.stylin {
+    font-family: var(--font3);
+    color: var(--nav-bluetext);
+    font-size: 40px;
+    border: 5px ridge var(--signupBordercolorinsert);
+    background-color: var(--signupbackgroundinsert);
+    border-radius: 30px;
+    margin: 25px 480px 25px;
+    display: block;
+}
+
+#name, #email, #password {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    background-color: var(--signupinsertboxcolor);
+    border: 5px ridge var(--signupinsertboxborder);
+    border-radius: 30px;
+    display: block;
+    font-weight: var(--font--weight-bold);
+}
+
+#name {
+    margin-left: 120px;
+    margin-bottom: 10px;
+    padding: 25px 150px 25px;
+}
+
+ #email {
+    margin-left: 120px;
+    padding: 0px 25px;
+    margin-bottom: 10px;
+} 
+
+#password {
+    margin-left: 120px;
+    padding: 0px 30px;
+    margin-bottom: 5px;
+}
+
+#signuptitle {
+    color: var(--signuphead1color);
+    margin-top: 0px;
+    margin-bottom: -30px;
+}
+
+.subtitleSignup {
+    font-size: 50px;
+    color: var(--signuphead2color);
+    margin-bottom: 50px;
+}
+
+/* Sign Up Closing */
+
+/* Login page opening */
+ .buttonlogs { /* SignUp */
+    color: rgb(255, 255, 255);
+    margin: 20px;
+}
+.buttonlogs1 { /* Login */
+    color: rgb(255, 255, 255);
+
+}
+.LoginBlue {color: var(--signuphead1color)}
+
+.bottomtext {
+    margin-bottom: -7px;
+}
+
+.loginbottom {
+    margin-top: -10px;
+    margin-bottom: 133px;
+}
+
+/*  Login Page Closing */
