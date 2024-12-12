@@ -549,12 +549,28 @@ a {text-decoration: none;}
 
 /* Media Queries*/
 
+/* Media Queries: Mobile Phones */
+
+
 @media only screen and (max-width: 600px) {
     body {
-      background-color: var(--nav-bluetext);
+      background-color: var(--background-red);
     }
 
     .mainfront {
-        background-image: none;
+        background-image: url("../MediaImagery/frostcity.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+
+    .list-nav {
+        background-color: var(--navgreybackground);
+        
+    }
+
+    .list-nav a {
+        color: var(--nav-bluetext);
+        font-weight: var(--font--weight-bold);
+    }
+
   }
