@@ -555,6 +555,6 @@ a {text-decoration: none;}
     }
 
     .mainfront {
-        background: blue;
+        background-image: none;
     }
   }
