@@ -648,22 +648,37 @@ a {text-decoration: none;}
 
     .lore-description, .importantnotice {
         padding: 0;
-        margin-top: -4vh;
+        margin-top: -6vh;
     }
 
     .importantnotice {
+        margin: 0vh 0vh;
+        color: var(--orange-accent);
+    }
+
+    .aligncenter2 {
         margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .playbutton2 {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
     }
   }
 
   /* Desktop Styles */
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1920px) {
+    .mainfront {
+        
+    
+    }
+    
     .list-nav {
         background-color: var(--navgreybackground);
         width: 17%;
         position: sticky;
         list-style: none;
-        margin-bottom: 1vh;
         margin-left: 2%;
     }
 
