@@ -605,21 +605,17 @@ a {text-decoration: none;}
         cursor: pointer;
     }
 
+    .sidebar-toggle-btn {
+        display: none;
+    }
   }
 
   /* Tablet styles */
-  @media only screen and (max-width: 600px) {
-
-    /* mobile-menu-button */
+  @media only screen and (min-width: 820px) {
+    
     .mobile-menu-button {
-        display: block; /* Hide the button by default */
-        font-size: 30px;
-        background-color: transparent;
-        border: none;
-        color: var(--nav-bluetext);
-        cursor: pointer;
+        display: none;
     }
-
 
   }
 
@@ -639,6 +635,10 @@ a {text-decoration: none;}
     }
 
     .mobile-menu-button {
+        display: none;
+    }
+
+    .sidebar-toggle-btn {
         display: none;
     }
   }
