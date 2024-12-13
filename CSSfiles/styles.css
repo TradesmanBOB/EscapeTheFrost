@@ -407,17 +407,11 @@ a {text-decoration: none;}
     width: 17%;
     background-color: var(--navgreybackground);
     list-style: none;
-    position: fixed;
-    top: 0;
+    position: sticky;
     padding-left: 2px;
 }
 
 #frontnav {
-    width: 17%;
-    background-color: var(--navgreybackground);
-    list-style: none;
-    position: fixed;
-    top: 0;
     padding-left: 2px;
     margin-left: -340px;
 }
@@ -550,8 +544,6 @@ a {text-decoration: none;}
 /* Media Queries*/
 
 /* Media Queries: Mobile Phones */
-
-
 @media only screen and (max-width: 600px) {
     body {
       background-color: var(--background-red);
@@ -564,8 +556,16 @@ a {text-decoration: none;}
     }
 
     .list-nav {
+        display: none; /* default hide menu */
+        flex-direction: column; /* stack the menu */
         background-color: var(--navgreybackground);
-        
+        width: 18%;
+        position: sticky;
+        list-style: none;
+        padding-left: 15vw;
+        font-size: 4vw;
+        width: 4vw;
+        height: 5vh;
     }
 
     .list-nav a {
@@ -573,4 +573,73 @@ a {text-decoration: none;}
         font-weight: var(--font--weight-bold);
     }
 
+    #frontnav {
+        padding-left: 2px;
+        margin-left: -340vw;
+    }
+
+    .frontpage {
+        font-size: 5vh;
+        margin-right: 20vw;
+    }
+
+    .maintitle {
+        font-size: 8vh;
+        margin-top: 1vh;
+        margin-bottom: 4vh;
+    }
+
+    .lore-description, .importantnotice {
+        margin-right: 16vw;
+        padding: 40px 40px;
+        font-size: 20px;
+    }
+
+    /* mobile-menu-button */
+
+    .mobile-menu-button {
+        display: block; /* Hide the button by default */
+        font-size: 30px;
+        background-color: var(--navanchorcolor);
+        border: 4px solid var(--background-navblue);
+        color: var(--nav-bluetext);
+        cursor: pointer;
+    }
+
+  }
+
+  /* Tablet styles */
+  @media only screen and (max-width: 600px) {
+
+    /* mobile-menu-button */
+    .mobile-menu-button {
+        display: block; /* Hide the button by default */
+        font-size: 30px;
+        background-color: transparent;
+        border: none;
+        color: var(--nav-bluetext);
+        cursor: pointer;
+    }
+
+
+  }
+
+  /* Desktop Styles */
+  @media only screen and (min-width: 1024px) {
+    .list-nav {
+        background-color: var(--navgreybackground);
+        width: 17%;
+        position: sticky;
+        list-style: none;
+        margin-bottom: 1vh;
+        margin-left: 2%;
+    }
+
+    .frontpage {
+        margin-top: -18vw;
+    }
+
+    .mobile-menu-button {
+        display: none;
+    }
   }
