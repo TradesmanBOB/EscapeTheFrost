@@ -590,7 +590,6 @@ a {text-decoration: none;}
     }
 
     .lore-description, .importantnotice {
-        margin-right: 16vw;
         padding: 20px 20px;
         font-size: 20px;
     }
