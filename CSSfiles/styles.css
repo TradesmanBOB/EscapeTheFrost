@@ -605,6 +605,10 @@ a {text-decoration: none;}
         cursor: pointer;
     }
 
+    .mobile-menu-button.active + .list-nav {
+        display: block;
+    }
+    
     .sidebar-toggle-btn {
         display: none;
     }
@@ -637,7 +641,6 @@ a {text-decoration: none;}
 
     .list-nav {
         display: none;
-
     }
 
     .frontpage {
@@ -665,13 +668,14 @@ a {text-decoration: none;}
         margin-top: 1vh;
         margin-bottom: 2vh;
     }
+
+
   }
 
   /* Desktop Styles */
   @media only screen and (min-width: 1920px) {
     .mainfront {
-        
-    
+        margin-top: 40vh;
     }
     
     .list-nav {
@@ -679,7 +683,6 @@ a {text-decoration: none;}
         width: 17%;
         position: sticky;
         list-style: none;
-        margin-left: 2%;
     }
 
     .frontpage {
