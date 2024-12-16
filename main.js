@@ -1,13 +1,13 @@
 // May contain incorrect code due to being AI gen'd
 
-// Nav Open/Closer for Mobile
+// Nav Open/Closer for all device types
 
-// Toggle function for opening and closing the menu
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+// Select the navigation button and the menu appears
+const navToggle = document.getElementById('mobileMenuButton', 'tabletmenubutton');
+const navMenu = document.getElementById('navMenu');
+
+// Add an event listener to the navigation button
+navToggle.addEventListener('click', () => {
+  // Toggle the 'active' class on the nav menu
+  navMenu.classList.toggle('active');
+});

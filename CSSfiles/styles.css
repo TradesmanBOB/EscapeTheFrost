@@ -544,7 +544,7 @@ a {text-decoration: none;}
 /* Media Queries*/
 
 /* Media Queries: Mobile Phones */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) and (min-width: 240px) {
     body {
       background-color: var(--background-red);
     }
@@ -573,19 +573,14 @@ a {text-decoration: none;}
         font-weight: var(--font--weight-bold);
     }
 
-    #frontnav {
-        padding-left: 2px;
-        margin-left: -340vw;
-    }
-
     .frontpage {
         font-size: 5vh;
         margin-right: 20vw;
     }
 
     .maintitle {
-        font-size: 8vh;
-        margin-top: 1vh;
+        font-size: 6vh;
+        margin-top: 7vh;
         margin-bottom: 4vh;
     }
 
@@ -599,7 +594,7 @@ a {text-decoration: none;}
     .mobile-menu-button {
         display: block; /* Hide the button by default */
         font-size: 30px;
-        background-color: transparent;
+        background-color: #4b4345;
         border: none;
         color: var(--nav-bluetext);
         cursor: pointer;
@@ -607,10 +602,6 @@ a {text-decoration: none;}
 
     .mobile-menu-button.active + .list-nav {
         display: block;
-    }
-    
-    .sidebar-toggle-btn {
-        display: none;
     }
 
     .lore-description, .importantnotice {
@@ -620,64 +611,13 @@ a {text-decoration: none;}
     }
   }
 
-  /* Tablet styles */
-  @media only screen and (min-width: 768px) {
-    
-    .mobile-menu-button {
-        display: none;
-    }
-
-    .sidebar-toggle-btn {
-        position: absolute;
-        top: 25vh;
-        left: 0vh;
-        font-size: 30px;
-        background-color: var(--black);
-        border: 2px solid var(--navanchorcolor);
-        color: var(--nav-bluetext);
-        cursor: pointer;
-        block-size: 30rem;
-    }
-
-    .list-nav {
-        display: none;
-    }
-
-    .frontpage {
-        margin-top: -6vh;
-        margin-right: 15vw;
-        padding: 0;
-    }
-
-    .lore-description, .importantnotice {
-        padding: 0;
-        margin-top: -6vh;
-    }
-
-    .importantnotice {
-        margin: 0vh 0vh;
-        color: var(--orange-accent);
-    }
-
-    .aligncenter2 {
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-
-    .playbutton2 {
-        margin-top: 1vh;
-        margin-bottom: 2vh;
-    }
-
-
-  }
-
   /* Desktop Styles */
-  @media only screen and (min-width: 1920px) {
+  @media only screen and (max-width: 769px) {
     .mainfront {
-        margin-top: 40vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
     }
-    
+
     .list-nav {
         background-color: var(--navgreybackground);
         width: 17%;
@@ -686,14 +626,7 @@ a {text-decoration: none;}
     }
 
     .frontpage {
-        margin-top: -18vw;
+        margin: 7vh;
     }
 
-    .mobile-menu-button {
-        display: none;
-    }
-
-    .sidebar-toggle-btn {
-        display: none;
-    }
   }
