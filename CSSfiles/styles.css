@@ -543,10 +543,11 @@ a {text-decoration: none;}
 
 /* Media Queries*/
 
-/* Media Queries: Mobile Phones */
+/* Media Queries: Mobile Phones & tablets */
 @media only screen and (max-width: 768px) and (min-width: 240px) {
     body {
-      background-color: var(--background-red);
+        background-color: var(--background-red);
+        font-family: var(--font1);
     }
 
     .mainfront {
@@ -613,6 +614,11 @@ a {text-decoration: none;}
 
   /* Desktop Styles */
   @media only screen and (max-width: 769px) {
+    body {
+        background-color: var(--background-red);
+        font-family: var(--font1);
+    }
+    
     .mainfront {
         margin-top: 5vh;
         margin-left: 1vw;
