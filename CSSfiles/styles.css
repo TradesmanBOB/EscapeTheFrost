@@ -407,17 +407,11 @@ a {text-decoration: none;}
     width: 17%;
     background-color: var(--navgreybackground);
     list-style: none;
-    position: fixed;
-    top: 0;
+    position: sticky;
     padding-left: 2px;
 }
 
 #frontnav {
-    width: 17%;
-    background-color: var(--navgreybackground);
-    list-style: none;
-    position: fixed;
-    top: 0;
     padding-left: 2px;
     margin-left: -340px;
 }
@@ -546,3 +540,99 @@ a {text-decoration: none;}
 }
 
 /*  Login Page Closing */
+
+/* Media Queries*/
+
+/* Media Queries: Mobile Phones & tablets */
+@media only screen and (max-width: 768px) and (min-width: 240px) {
+    body {
+        background-color: var(--background-red);
+        font-family: var(--font1);
+    }
+
+    .mainfront {
+        background-image: url("../MediaImagery/frostcity.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .list-nav {
+        display: none; /* default hide menu */
+        flex-direction: column; /* stack the menu */
+        background-color: var(--navgreybackground);
+        width: 18%;
+        position: sticky;
+        list-style: none;
+        padding-left: 15vw;
+        font-size: 4vw;
+        width: 4vw;
+        height: 5vh;
+    }
+
+    .list-nav a {
+        color: var(--nav-bluetext);
+        font-weight: var(--font--weight-bold);
+    }
+    
+    .list-nav.active {
+        display: block; /* Make the menu visible */
+        font-family: 'Times New Roman', Serif;
+        font-size: 10px;
+      }
+
+    .frontpage {
+        font-size: 5vh;
+        margin-right: 20vw;
+    }
+
+    .maintitle {
+        font-size: 6vh;
+        margin-top: 7vh;
+        margin-bottom: 4vh;
+    }
+
+    .lore-description, .importantnotice {
+        padding: 20px 20px;
+        font-size: 20px;
+    }
+
+    /* mobile-menu-button */
+
+    .mobile-menu-button {
+        display: block; /* Hide the button by default */
+        font-size: 30px;
+        background-color: #4b4345;
+        border: none;
+        color: var(--nav-bluetext);
+        cursor: pointer;
+    }
+
+    .mobile-menu-button.active + .list-nav {
+        display: block;
+    }
+
+    .lore-description, .importantnotice {
+        padding: 0px;
+        font-size: 2vh;
+        font: 700;
+    }
+  }
+
+  /* Desktop Styles */
+  @media only screen and (max-width: 769px) {
+    body {
+        background-color: var(--background-red);
+        font-family: var(--font1);
+    }
+
+    .list-nav {
+        background-color: var(--navgreybackground);
+        width: 17%;
+        position: sticky;
+        list-style: none;
+    }
+
+    .frontpage {
+        margin-;
+    }
+  }
