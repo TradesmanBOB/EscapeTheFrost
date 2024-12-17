@@ -1,13 +1,13 @@
-// May contain incorrect code due to being AI gen'd
+// Select both the mobile and tablet menu buttons
+const navToggles = document.querySelectorAll('#mobileMenuButton, #tabletMenuButton');
 
-// Nav Open/Closer for all device types
-
-// Select the navigation button and the menu appears
-const navToggle = document.getElementById('mobileMenuButton', 'tabletmenubutton');
+// Select the navigation menu
 const navMenu = document.getElementById('navMenu');
 
-// Add an event listener to the navigation button
-navToggle.addEventListener('click', () => {
-  // Toggle the 'active' class on the nav menu
-  navMenu.classList.toggle('active');
+// Add event listener to each of the navigation buttons
+navToggles.forEach(navToggle => {
+  navToggle.addEventListener('click', () => {
+    // Toggle the 'active' class on the nav menu
+    navMenu.classList.toggle('active');
+  });
 });

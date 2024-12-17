@@ -573,6 +573,12 @@ a {text-decoration: none;}
         color: var(--nav-bluetext);
         font-weight: var(--font--weight-bold);
     }
+    
+    .list-nav.active {
+        display: block; /* Make the menu visible */
+        font-family: 'Times New Roman', Serif;
+        font-size: 10px;
+      }
 
     .frontpage {
         font-size: 5vh;
@@ -618,11 +624,6 @@ a {text-decoration: none;}
         background-color: var(--background-red);
         font-family: var(--font1);
     }
-    
-    .mainfront {
-        margin-top: 5vh;
-        margin-left: 1vw;
-    }
 
     .list-nav {
         background-color: var(--navgreybackground);
@@ -632,7 +633,6 @@ a {text-decoration: none;}
     }
 
     .frontpage {
-        margin: 7vh;
+        margin-;
     }
-
   }
