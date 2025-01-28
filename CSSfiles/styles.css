@@ -1,638 +1,240 @@
-/* Mainbackgrounding and general CSSing */
-body {
-    background-color: var(--background-red);
-}
-
-.mainfront {
-    background-image: url("../MediaImagery/frostcity.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.sign-uppage, .loginpage {
-    background-image: url("../MediaImagery/cavepunk.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-h1 {
-    font-weight: var(--font--weight-bold);
-    font-size: 100px;
-}
-
-.aligncenter1 {
-    text-align: center;
-}
-
-.strong {
-    font-weight: var(--font--weight-bold);
-}
-
-/*anchor section text decor remover*/
-a {text-decoration: none;}
-/*anchor text closer*/
-
-/* Multipage CSS Closing */
-
-/* Color Classes section*/
-:root {
-    --background-red: rgb(219, 0, 0); /* Primary Red */
-    --nav-bluetext: rgb(50, 100, 240);  /* Dark Blue */
-    --background-navblue: rgb(0, 0, 103);  /* Light Blue */
-    --green-textcolor: rgb(27, 208, 3);  /* Green Accent */
-    --orange-accent: rgb(252, 122, 0);  /* Orange Accent */
-    --neutral-dark: rgb(4, 6, 41);  /* Neutral Dark */
-    --main-title: rgb(0, 105, 170); /* MainTitle */
-    --linklinetextcolor: rgb(10, 175, 210); /* LinkLine Coloring for underlined linked text */
-    --navgreybackground: rgba(100, 100, 100, 0.3); /* grey box containing nav bar */
-    --aboutbody: rgb(27, 208, 3); 
-    --developerorange: rgb(208, 92, 3);
-    --white: rgb(255, 255, 255); /* bruh just white */
-    --contactsubmit: rgb(4, 170, 109);
-    --contactsubmithover: rgb(27, 107, 31);
-    --containerboxcontact: rgb(204, 204, 204);
-    --container: rgba(75, 75, 75, 0.443);
-    --frontfirstparagraph: rgba(0, 0, 182, 0.784);
-    --black: rgb(0, 0, 0); /* bruh just black */
-    --borderbackground: rgb(0, 30, 75); /* bordertext uses the navbluetextvar */
-    --borderline: rgb(3, 5, 17);
-    --buttonbackgroundcolor: rgb(50, 100, 240);
-    --colorButton5: rgb(42, 172, 202);
-    --navanchorcolor: rgb(1, 92, 237);
-    --signupBordercolorinsert: rgb(4, 0, 41);
-    --signupbackgroundinsert: rgb(0, 32, 92);
-    --signupinsertboxcolor: rgb(53, 208, 231);
-    --signupinsertboxborder: rgb(31, 143, 255);
-    --signuphead2color: rgb(31, 143, 255);
-    --signuphead1color: rgb(94, 207, 241);
-    --font1: serif; /* Main use font */ 
-    --font2: fantasy;  /* 2nd font */
-    --font3: sans-serif; /* 3rd font */
-    --font--weight-bold: 850; /* font weight bold */
-    --discordblue: #012e68; /* Discord's blue */
-}
-
-.maintitle {color: var(--main-title);}
-
-.list-nav {
-    background-color: var(--navgreybackground);
-}
-
-.list-nav a {
-    color: var(--nav-bluetext);
-    font-weight: var(--font--weight-bold);
-}
-
-.list-nav a:hover {
-    background-color: var(--background-navblue);
-}
-
-/*Color Classes section close*/
-
-/* Landing Page Main CSS */
-.lore-description {
-    font-size: 35px;
-    font-weight: var(--font--weight-bold);
-    color: var(--frontfirstparagraph);
-    justify-content: center;
-    padding-left: 100px;
-}
-
-.importantnotice {
-    font-size: 35px;
-    font-weight: var(--font--weight-bold);
-    padding-left: 100px;
-    color: var(--black);
-}
-
-.frontpage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
-    max-width: 80%;
-}
-/* Landing Page Main CSS Closing */
-
-/* Opening AboutMe */
-.aboutme, .contactus {
-    background-image: url('../MediaImagery/FrostSurvivor.png');
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-position: center center; /* Centers the image */
-    margin: 0; /* Remove any default margin */
-    font-weight: var(--font--weight-bold);
-    font-family: var(--font1);
-    background-attachment: fixed;
-}
-
-.contact {
-    color: var(--nav-bluetext);
-}
-
-.about {
-    margin-top: -25px;
-    margin-bottom: 4%;
-}
-
-#aboutmebody {
-    /* width: 900px;            
-    height: 350px;            */
-    padding: 20px 30px 20px;
-    /* padding-left: 625px;           */
-    text-align: center;      /* Horizontally center the text */
-    display: flex;           /* Use flexbox for centering */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center;     /* Centers text vertically */
-    font-size: 20px;         /* Set text size */
-    line-height: 1.5;
-    font-weight: var(--font--weight-bold);
-    overflow: hidden; /* Hide overflowing content (if any) */
-    color: var(--aboutbody);
-    margin-top: -40px;
-    margin-bottom: 6px;
-}
-
-.developer {
-    padding-top: 10px;
-    text-align: center;  /* Horizontally centers the text */
-    line-height: 1.5;    /* Increases line spacing */
-    display: flex;       /* Use flexbox for vertical centering */
-    justify-content: center; /* Centers text horizontally */
-    align-items: center; /* Centers text vertically */
-    font-size: 20px;
-    overflow: hidden;
-    color: var(--developerorange);
-}
-
-.aboutpage {
-    text-align: center;
-    max-width: 80%;
-    padding-top: 60px;  /* Add top padding if needed */
-}
-.aboutdiv {
-    margin-left: 24%;
-}
-
-.aboutlist {
+* {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    margin: 5px;
-}
-/* Closing AboutMe */
-
-/* contact page area */
-.about {
-    margin-top: -120px;
-    margin-top: -40px;
-    color: var(--aboutbody);
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-.contactpage {
-    text-align: center;
-    margin-left: 20%;
-    max-width: 100% 50%;
-    padding: 140px;  /* Add top padding if needed */
-    border-radius: 50px; /* Rounded borders */
+:root {
+    /* Colors */
+    --White: white;
+    /* Typography */
+    --24Fsize: 1.5rem;
+    --Fbold: bold;
+    /* Spacing */
+
+    /* Page Sizing (and border box) */
+
+    /* Z Index Page Depth */
+
+    /* Transition & Animation */
+
 }
 
-/* Style inputs with type="text", select elements and textareas */
-  input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    border: 1px solid var(--containerboxcontact); /* Gray border */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+/* Content Styling */
+/* Body and content styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row; /* Align children (sidebar and content) horizontally */
+    background-image: url("/MediaImagery/frostcity.jpeg");
+    background-size: cover;  /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    background-color: rgb(9, 0, 58);
 }
   
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: var(--contactsubmit);
-    color: var(--white);
-    padding: 12px 20px;
+  /* Sidebar (Desktop) */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 8, 121, 0.705);
+    color: white;
+    padding-top: 16px;
+    display: block;
+    margin-left: 40px;
+}
+  
+.sidebar nav ul {
+    list-style: none;
+    padding-left: 0;
+    
+}
+  
+.sidebar nav ul li {
+    margin: 2rem 0;
+    box-shadow: 5px 5px 5px 5px #6f65ff5d;
+    border-style: solid;
+    border-color: #6f65ff5d;
+    background-color: #190dc27a;
+}
+  
+.sidebar nav ul li a {
+    color: #95c3f7;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+  
+.sidebar nav ul li a:hover {
+    background-color: #001b36;
+    color: #b1d3fa;
+    font-weight: bold;
+}
+  
+  /* Content section - Main content area */
+.content {
+    flex-grow: 1; /* Take up the remaining space after the sidebar */
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    padding: 20px;
+    min-height: 100vh; /* Make sure content takes full height */
+    gap: 30px; /* Add space between the boxes */
+    padding-top: 8rem;
+}
+  
+  /* Box for h1 and p (to separate them) */
+.box h1{
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Optional: Limit max width */
+    padding: 20px;
+    background-color: rgba(142, 177, 252, 0.6); /* Light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+    text-align: center; /* Center text inside the box */
+}
+
+.box .lore-descrip{
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Optional: Limit max width */
+    padding: 20px;
+    background-color: #1036a0cc; /* Light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    text-align: center; /* Center text inside the box */
+}
+
+.box .Important-Notice{
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Optional: Limit max width */
+    padding: 20px;
+    background-color: #800202cc; /* Light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    text-align: center; /* Center text inside the box */
+}
+  
+h1 {
+    margin-bottom: 10px; /* Add space below the h1 */
+    color: #0058b1;
+    font-size: 4rem;
+}
+
+p.Important-Notice {
+    color: rgb(255, 189, 103);
+    font-weight: var(--Fbold);
+    font-size: 1.2rem;
+}
+
+p {
+    margin-top: 0; /* Remove top margin to reduce space above p */
+    color: #b1d3fa;
+    font-size: 1.2rem;
+}
+
+  
+  /* Top Nav (Mobile) */
+.top-nav {
+    display: none; /* Hide top nav by default */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+  
+.top-nav .menu-toggle {
+    font-size: 30px;
+    background: none;
+    color: white;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: var(--contactsubmithover);
+.top-nav nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+  
+.top-nav nav ul li {
+    margin: 10px 0;
+}
+  
+.top-nav nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
   }
   
-  /* Add a background color and some padding around the form */
-.container {
-    border-radius: 5px;
-    background-color: var(--container);
-    padding: 20px;
-    padding-bottom: 20px;
-    margin: 0px 180px;
-  }
-
-.containingcontainer {
-    margin-top: -60px;
-    margin: 0px 180px;
-    background: none;
-}
-.coloringcontact {
-    color: var(--colorButton5);
+.top-nav nav ul li a:hover {
+    background-color: #575757;
 }
 
-  #fuser {
-    font-size: 20px;
-}
-#fuser, #lemail {
-    font-weight: var(--font--weight-bold);
-    border-radius: 30px;
-}
-#lemail {
-    font-size: 25px;
-}
-#subject {
-    font-size: 20px;
-    color: var(--black);
-    font-weight: var(--font--weight-bold);
-    background-color: var(--white);
-    border-radius: 30px;
-}
-/* contact page closed */
-
-/*Playbuttons section*/
-/* adjusts the signup button on index page */
-.playbutton a{
-    font-family: var(--font3);
-    color: var(--nav-bluetext);
-    font-size: 30px;
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: double;
-    font-weight: bold;
+.button1 {
+    font-size: 2rem;
+    width: 20%;
+    padding: 10px;
+    max-width: 600px;
+    background-color: #1036a0cc;
+    color: #000000; /* Default text color (black) */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0.5rem 20px;
+    display: flex; /* Use flexbox to allow full span */
+    justify-content: center; /* Center the content if needed */
 }
 
-/* adjusts the login button on index page */
-.playbutton2 a{ 
-    font-family: var(--font3);
-    color: var(--linklinetextcolor);
-    font-size: 20px;
-    background-color: transparent;
-    border-radius: 30px;
-    padding: 5px 10px;
-    margin: 0 auto;
-    display: block;
-    text-decoration: underline;
-    text-decoration-color:var(--linklinetextcolor);
+.button1 a {
+    color: rgba(142, 177, 252, 0.6); /* Set color to black for all states */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor take up the full space of the button */
+    width: 100%; /* Make the anchor span the full width */
+    height: 100%; /* Make the anchor span the full height */
+    padding: 20px; /* Ensure padding is consistent */
+    text-align: center; /* Center the text inside the button */
 }
 
-/* adjusts the signup button on index page */
-.playbutton {
-    background-color: var(--borderbackground);
-    border-radius: 50px;
-    border: 5px ridge var(--borderline);
-    padding-bottom: -200px;
+/* On hover */
+.button1 a:hover {
+    color: #FFFFFF; /* White text on hover */
+    background-color: #608bffcc; /* Deep blue background on hover */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
 }
 
-/* adjusts the login button on index page */
-.playbutton2 {
-    background-color: var(--borderbackground);
-    border-radius: 50px;
-    border: 5px ridge var(--borderline);
-    display: block;
-    margin-top: 2vh;
+/* Ensure visited links are also black, to prevent purple text */
+.button1 a:visited {
+    color: #000; /* Black text for visited links */
 }
 
-.playbutton3 {
-    font-family: var(--font3);
-    color: var(--nav-bluetext);
-    font-size: 30px;
-    border: 5px ridge var(--borderline);
-    background-color: var(--borderbackground);
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 0 auto;
-    display: block;
-    margin-top: 20px;
-    text-decoration: double;
-    margin-bottom: -135px;
-}
-
-.playbutton4 /* This button for the Login&SignUp pages to switch between each other */ {
-    font-family: var(--font3);
-    color: var(--nav-bluetext);
-    font-size: 30px;
-    border: 5px ridge var(--borderline);
-    background-color: rgb(0, 30, 75);
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 20px 740px;
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: double;
-    font-weight: var(--font--weight-bold);
-}
-
-.playbutton5 /* I a specifically for going to the frostpunk store on the Login&SignUp pages */ {
-    font-family: var(--font3);
-    color: var(--colorButton5);
-    font-size: 20px;
-    border: 5px ridge var(--borderline);
-    background-color: var(--borderbackground);
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 20px 740px;
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-decoration-color:var(--linklinetextcolor);
-    font-weight: var(--font--weight-bold);
-}
-.playbutton5:visited, .playbutton5:hover, .playbutton5:active {
-    color: var(--colorButton5);
-}
-
-    /* Playbuttons Extended */
-/* adjusts the button on About page */
-.playbutton6 a{
-    font-family: var(--font3);
-    color: var(--nav-bluetext);
-    font-size: 30px;
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 20px;
-    text-decoration: double;
-    font-weight: var(--font--weight-bold);
-    color: rgb(81, 148, 230);
-    border: var(--black);
-}
-
-.playbutton6 {
-    background-color: var(--borderbackground);
-    border-radius: 50px;
-    border: ridge var(--borderline);
-    padding-bottom: -200px;
-    color: var(--borderbackground);
-}
-
-.playbutton7 a{
-    font-family: var(--font3);
-    color: var(--discordblue);
-    font-size: 30px;
-    border-radius: 50px;
-    padding: 10px 15px;
-    margin: 0 auto;
-    display: block;
-    text-decoration: double;
-    font-weight: var(--font--weight-bold);
-    border: var(--background-red); /* makes another line in the box */
-} 
-
-.playbutton7 {
-    background-color: var(--linklinetextcolor);
-    border-radius: 50px;
-    border: ridge var(--borderline);
-    display: block;
-    margin-left: 500px;
-    margin-top: 15px;
-}
-
-  /*Playbuttons section close*/
-
-/*Navigation Menu*/
-.list-nav {
-    width: 17%;
-    background-color: var(--navgreybackground);
-    list-style: none;
-    position: sticky;
-    padding-left: 2px;
-}
-
-#frontnav {
-    padding-left: 2px;
-    margin-left: -340px;
-}
-
-.list-nav a {
-    color: var(--navanchorcolor);
-    font-weight: var(--font--weight-bold);
-    font-size: 25px;
-    font-family: var(--font2);
-    text-align: left;
-    display: block;
-    padding: 6px 20px 10px 30px;
-    text-decoration: none;
-}
-
-.list-nav a:hover {
-    background-color: var(--background-navblue);
-}
-/*Navigation Menu Close*/
-
-/*Sign Up Section*/
-/* SignUp */
-.mainsign {
-    display: block;
-    font-family: var(--font2);
-    padding: 6px 20px 10px 30px;
-    max-width: 80%;
-    margin-left: 250px;
-}
-
-/* Login */
-.mainsign1 { 
-    display: block;
-    font-family: var(--font2);
-    padding: 6px 20px 10px 30px;
-    max-width: 80%;
-    margin-left: 320px;
-}
-
-/* buttons for signup */
-.sign-up {
-    margin: 30px 600px 50px;
-    padding: 15px;
-    margin-bottom: -20px;
-}
-
-/* buttons for login */
-.login-page {
-    margin: 50px 600px 20px;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.stylin {
-    font-family: var(--font3);
-    color: var(--nav-bluetext);
-    font-size: 40px;
-    border: 5px ridge var(--signupBordercolorinsert);
-    background-color: var(--signupbackgroundinsert);
-    border-radius: 30px;
-    margin: 25px 480px 25px;
-    display: block;
-}
-
-#name, #email, #password {
-    height: 50px;
-    width: 250px;
-    font-size: 20px;
-    background-color: var(--signupinsertboxcolor);
-    border: 5px ridge var(--signupinsertboxborder);
-    border-radius: 30px;
-    display: block;
-    font-weight: var(--font--weight-bold);
-}
-
-#name {
-    margin-left: 120px;
-    margin-bottom: 10px;
-    padding: 25px 150px 25px;
-}
-
- #email {
-    margin-left: 120px;
-    padding: 0px 25px;
-    margin-bottom: 10px;
-} 
-
-#password {
-    margin-left: 120px;
-    padding: 0px 30px;
-    margin-bottom: 5px;
-}
-
-#signuptitle {
-    color: var(--signuphead1color);
-    margin-top: 0px;
-    margin-bottom: -30px;
-}
-
-.subtitleSignup {
-    font-size: 50px;
-    color: var(--signuphead2color);
-    margin-bottom: 50px;
-}
-
-/* Sign Up Closing */
-
-/* Login page opening */
- .buttonlogs { /* SignUp */
-    color: rgb(255, 255, 255);
-    margin: 20px;
-}
-.buttonlogs1 { /* Login */
-    color: rgb(255, 255, 255);
-
-}
-.LoginBlue {color: var(--signuphead1color)}
-
-.bottomtext {
-    margin-bottom: -7px;
-}
-
-.loginbottom {
-    margin-top: -10px;
-    margin-bottom: 133px;
-}
-
-/*  Login Page Closing */
-
-/* Media Queries*/
-
-/* Media Queries: Mobile Phones & tablets */
-@media only screen and (max-width: 768px) and (min-width: 240px) {
-    body {
-        background-color: var(--background-red);
-        font-family: var(--font1);
+  /* Mobile Layout */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none; /* Hide sidebar on mobile */
     }
-
-    .mainfront {
-        background-image: url("../MediaImagery/frostcity.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
+  
+    .top-nav {
+      display: block; /* Show the top nav on mobile */
     }
-
-    .list-nav {
-        display: none; /* default hide menu */
-        flex-direction: column; /* stack the menu */
-        background-color: var(--navgreybackground);
-        width: 18%;
-        position: sticky;
-        list-style: none;
-        padding-left: 15vw;
-        font-size: 4vw;
-        width: 4vw;
-        height: 5vh;
+  
+    .mobile-nav {
+      display: none; /* Hide mobile nav by default */
     }
-
-    .list-nav a {
-        color: var(--nav-bluetext);
-        font-weight: var(--font--weight-bold);
+  
+    .mobile-nav.show {
+      display: block; /* Show mobile nav when toggled */
     }
-    
-    .list-nav.active {
-        display: block; /* Make the menu visible */
-        font-family: 'Times New Roman', Serif;
-        font-size: 10px;
-      }
-
-    .frontpage {
-        font-size: 5vh;
-        margin-right: 20vw;
+  
+    .content {
+      padding: 10px;
     }
-
-    .maintitle {
-        font-size: 6vh;
-        margin-top: 7vh;
-        margin-bottom: 4vh;
-    }
-
-    .lore-description, .importantnotice {
-        padding: 20px 20px;
-        font-size: 20px;
-    }
-
-    /* mobile-menu-button */
-
-    .mobile-menu-button {
-        display: block; /* Hide the button by default */
-        font-size: 30px;
-        background-color: #4b4345;
-        border: none;
-        color: var(--nav-bluetext);
-        cursor: pointer;
-    }
-
-    .mobile-menu-button.active + .list-nav {
-        display: block;
-    }
-
-    .lore-description, .importantnotice {
-        padding: 0px;
-        font-size: 2vh;
-        font: 700;
-    }
-  }
-
-  /* Desktop Styles */
-  @media only screen and (max-width: 769px) {
-    body {
-        background-color: var(--background-red);
-        font-family: var(--font1);
-    }
-
-    .list-nav {
-        background-color: var(--navgreybackground);
-        width: 17%;
-        position: sticky;
-        list-style: none;
-    }
-
-    .frontpage {
-        margin-;
-    }
-  }
+}

@@ -6,52 +6,66 @@
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
     <title>Escape The Frost</title>
 </head>
-<body class="mainfront aligncenter1">
-    <header>
-        <nav>
-            <div>
-                <!-- Mobile menu toggle button -->
-                <button class="mobile-menu-button" id="mobileMenuButton">
-                    &#9776; <!-- line icon -->
-                </button>
-                <!-- Navigation menu -->
-                <ul class="list-nav" id="navMenu">
-                    <li class="bottomLeftlist Frostpunk"><a href="index.html">The Front</a></li>
-                    <li class="bottomLeftlist Frostpunk"><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">Frostpunk The Inspiration</a></li>
-                    <li class="bottomLeftlist GDD"><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">Game Design Document</a></li>
-                    <li><a href="Login.html">Login!</a></li>
-                    <li class="bottomLeftlist"><a href="About.html">(Lorem Ipsum) About Us</a></li> 
-                    <li><a href="contact.html">(Non-functional) Contact page</a></li>
-                    <li class="bottomLeftlist"><a href="https://discord.gg/jB3SC4pZTg" target="_blank">ETF Discord</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div class="frontpage">
-        <h1 class="maintitle aligncenter1">Escape The Frost</h1>
-        <p class="lore-description aligncenter1">
-            Welcome newcoming Survivors, rest and prepare yourself. Before returning
-             to the frozen wastes to scavenge, loot, and rescue others. When you return from your expeditions; craft, 
-             upgrade, equip new items and assist the City in its expansion and development.</p>
-        <p class="importantnotice aligncenter1"><strong>This is a fan-based game
-             based on the IP of Frostpunk & its Sequel, license
-             will be obtained sometime during development, if necessary!</strong></p>
-        <!-- add Java or link/anchor elements to move to each page -->
-        <div class="aligncenter2">
-            <button class="playbutton aligncenter1">
-                <a class="sign-up" href="SignUp.html"_blank>
-            Begin Scavenger
-                </a></button>
-        <!--create another link to a sign-up page -->
+<body>
+    
+  <!-- Sidebar (Desktop) -->
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="index.html">The Frosty Front</a></li>
+        <li><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">The Inspiration</a></li>
+        <li><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">The Design Document</a></li>
+        <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank">Discord</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-            <button class="playbutton2 aligncenter1">
-                <a href="Login.html"_blank>
-            Already have a character? Click here.
-                </a></button>
+  <!-- Top Nav (Mobile) -->
+  <div class="top-nav">
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="index.html">The Frosty Front</a></li>
+            <li><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">The Inspiration</a></li>
+            <li><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">The Design Document</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </nav>
+  </div>
+
+  <!-- Main content -->
+  <div class="content">
+        <div class="box">
+            <h1>Escape The Frost</h1>
+        </div>
+        <div class="box">
+            <p class="lore-descrip">Welcome newcoming Scavenegers, rest and prepare yourself. <br> 
+            Before you venture out into the wastes once more; please, rest relax, craft, upgrade, and assist the city in its expansion
+            and survival. Our survival in the cold is most dependent on you and other scavengers.
+            And of course with those who stay behind to work within the city.
+            </p>
+        </div>
+        <div class="box">
+            <p class="Important-Notice">
+            This is a fan-based game based on the IP
+            of Frostpunk & its Sequel, licensing 
+            will be obtained sometime during development, if necessary!
+            </p>
+        </div>
+        <div class="button1">
+            <a href="SignUp.html" class="SignUp">
+                Awaken Scaveneger?
+            </a>
+        </div>
+        <div class="button1">
+            <a href="Login.html" class="Login">
+                Continue on Scaveneger?
+            </a>
         </div>
     </div>
-        <!--create another link to a login page-->
-        <!--TEST Branch testing-->
     <script src="main.js"></script>
 </body>
 </html>
