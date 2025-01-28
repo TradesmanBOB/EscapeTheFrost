@@ -9,6 +9,17 @@
 :root {
     /* Colors */
     --White: white;
+    --LightBlue:rgba(142, 177, 252, 0.6);
+    --BlackTransparent: #0000001a;
+    --Blue1: #1036a0cc;
+    --Red1: #800202cc;
+    --Blue2: #0058b1;
+    --GoldOrange: #ffbd67;
+    --Grey1: #333;
+    --Grey2: #575757;
+    --Blue3: #8eb1fc99;
+    --Blue4: #608bffcc;
+
     /* Typography */
     --24Fsize: 1.5rem;
     --Fbold: bold;
@@ -108,7 +119,7 @@ body {
     padding: 20px;
     background-color: #1036a0cc; /* Light background for contrast */
     border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    box-shadow: 0 4px 8px var(--BlackTransparent); /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
 }
 
@@ -118,7 +129,7 @@ body {
     padding: 20px;
     background-color: #800202cc; /* Light background for contrast */
     border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    box-shadow: 0 4px 8px var(--BlackTransparent); /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
 }
   
@@ -145,14 +156,14 @@ p {
 .top-nav {
     display: none; /* Hide top nav by default */
     background-color: #333;
-    color: white;
+    color: var(--White);
     padding: 10px;
 }
   
 .top-nav .menu-toggle {
     font-size: 30px;
     background: none;
-    color: white;
+    color: var(--White);
     border: none;
     cursor: pointer;
 }
@@ -167,7 +178,7 @@ p {
 }
   
 .top-nav nav ul li a {
-    color: white;
+    color: var(--White);
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -186,7 +197,7 @@ p {
     background-color: #1036a0cc;
     color: #000000; /* Default text color (black) */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--BlackTransparent);
     text-align: center;
     margin: 0.5rem 20px;
     display: flex; /* Use flexbox to allow full span */
@@ -194,7 +205,7 @@ p {
 }
 
 .button1 a {
-    color: rgba(142, 177, 252, 0.6); /* Set color to black for all states */
+    color: #8eb1fc99; /* Set color to black for all states */
     text-decoration: none; /* Remove underline */
     display: block; /* Make the anchor take up the full space of the button */
     width: 100%; /* Make the anchor span the full width */
@@ -205,7 +216,7 @@ p {
 
 /* On hover */
 .button1 a:hover {
-    color: #FFFFFF; /* White text on hover */
+    color: var(--White); /* White text on hover */
     background-color: #608bffcc; /* Deep blue background on hover */
     font-weight: var(--Fbold);
     font-size: 2rem;
