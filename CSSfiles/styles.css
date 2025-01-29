@@ -261,6 +261,16 @@ p {
     text-align: center; /* Center text inside the box */
 }
 
+.about-us-p {
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Optional: Limit max width */
+    padding: 20px;
+    background-color: rgba(142, 177, 252, 0.6); /* Light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    text-align: center; /* Center text inside the box */
+}
+
 
 .about-title {
     background-color: rgba(142, 177, 252, 0.6);
