@@ -40,7 +40,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: row; /* Align children (sidebar and content) horizontally */
-    background-image: url("/MediaImagery/frostcity.jpeg");
+    background-image: url("../MediaImagery/frostcity.jpeg");
     background-size: cover;  /* Ensures the image covers the entire viewport */
     background-position: center center; /* Centers the image */
     background-attachment: fixed;  /* Keeps the background fixed while scrolling */
