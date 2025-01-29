@@ -109,7 +109,7 @@ body {
     padding: 20px;
     background-color: rgba(142, 177, 252, 0.6); /* Light background for contrast */
     border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: soft shadow */
+    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
 }
 
@@ -227,6 +227,48 @@ p {
     color: #000; /* Black text for visited links */
 }
 
+.about-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row; /* Align children (sidebar and content) horizontally */
+    background-image: url("../MediaImagery/cavepunk.jpeg");
+    background-size: cover;  /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the image */
+    background-attachment: fixed;  /* Keeps the background fixed while scrolling */
+    background-color: rgb(105, 105, 105);
+}
+
+.content-about {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    max-height: 100vh;
+    gap: 30px;
+    padding-top: 8rem;
+}
+
+.box-about h1{
+    width: 100%; /* Take full width */
+    max-width: 600px; /* Optional: Limit max width */
+    padding: 20px;
+    background-color: rgba(142, 177, 252, 0.6); /* Light background for contrast */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    text-align: center; /* Center text inside the box */
+}
+
+
+.about-title {
+    background-color: rgba(142, 177, 252, 0.6);
+    box-shadow: 5px 5px 5px 5px #190dc27a;
+    border-style: solid;
+    border-color: rgb(255, 112, 112);
+}
+
 /* Mobile Layout */
 @media (max-width: 768px) {
     /* Sidebar - Hide on mobile */
@@ -333,11 +375,20 @@ p {
 
     /* Adjust navigation links for mobile */
     .top-nav nav ul li {
-        margin: 0.8rem 0; /* Adjust margin for navigation links */
+        margin: 2rem 0; /* Adjust margin for navigation links */
+        box-shadow: 5px 5px 5px 5px #6f65ff5d;
+        border-style: solid;
+        border-color: #6f65ff5d;
+        background-color: #190dc27a;
     }
 
     .top-nav nav ul li a {
         font-size: 1.2rem; /* Adjust font size for mobile nav links */
+        color: #95c3f7;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s;
     }
 
     /* Mobile menu toggle button */
@@ -350,3 +401,4 @@ p {
         padding: 10px;
     }
 }
+
