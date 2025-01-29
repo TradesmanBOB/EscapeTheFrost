@@ -19,7 +19,7 @@
     --Grey2: #575757;
     --Blue3: #8eb1fc99;
     --Blue4: #608bffcc;
-
+    --Blue5-NavTransBlue: rgba(0, 8, 121, 0.5);
     /* Typography */
     --24Fsize: 1.5rem;
     --Fbold: bold;
@@ -40,11 +40,11 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: row; /* Align children (sidebar and content) horizontally */
-    background-image: url("/MediaImagery/FrostSurvivor.png");
+    background-image: url("/MediaImagery/frostcity.jpeg");
     background-size: cover;  /* Ensures the image covers the entire viewport */
     background-position: center center; /* Centers the image */
     background-attachment: fixed;  /* Keeps the background fixed while scrolling */
-    background-color: rgb(9, 0, 58);
+    background-color: rgb(105, 105, 105);
 }
   
   /* Sidebar (Desktop) */
@@ -155,7 +155,7 @@ p {
   /* Top Nav (Mobile) */
 .top-nav {
     display: none; /* Hide top nav by default */
-    background-color: #333;
+    background-color: rgba(0, 8, 121, 0.5);
     color: var(--White);
     padding: 10px;
 }
@@ -227,25 +227,126 @@ p {
     color: #000; /* Black text for visited links */
 }
 
-  /* Mobile Layout */
-  @media (max-width: 768px) {
-    .sidebar {
-      display: none; /* Hide sidebar on mobile */
-    }
-  
-    .top-nav {
-      display: block; /* Show the top nav on mobile */
-    }
-  
-    .mobile-nav {
-      display: none; /* Hide mobile nav by default */
-    }
-  
-    .mobile-nav.show {
-      display: block; /* Show mobile nav when toggled */
-    }
-  
+/* Mobile Layout */
+@media (max-width: 768px) {
+    /* Sidebar - Hide on mobile */
+
     .content {
-      padding: 10px;
+        padding-top: 6rem;
+    }
+
+    .sidebar {
+        display: none; /* Hide sidebar on mobile */
+    }
+
+    .sidebar.show {
+        display: block;
+        background-color: rgba(199, 199, 199, 0.705);
+        color: white;
+        padding-top: 1rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 15.625rem;
+        z-index: 1000;
+    }
+
+    /* Top Nav - Show on mobile */
+    .top-nav {
+        display: block; /* Show top nav on mobile */
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.384);
+    }
+
+    .menu-toggle {
+        font-size: 30px; /* Adjust size for better visibility */
+    }
+
+    /* Mobile Navigation */
+    .mobile-nav {
+        display: none; /* Hide mobile nav by default */
+    }
+
+    .mobile-nav.show {
+        display: block; /* Show mobile nav when toggled */
+    }
+
+    /* Content section adjustments */
+    .content {
+        padding: 10px; /* Padding adjustments for mobile */
+    }
+
+    /* Adjust buttons for mobile */
+    .button1 {
+        font-size: 1.5rem; /* Reduce font size on mobile */
+        width: 50%; /* Full width buttons */
+        padding: 10px; /* Reduce padding for mobile */
+        max-width: 600px; /* Keep max width for consistency */
+        background-color: #1036a0cc;
+        color: #000000; /* Default text color */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px var(--BlackTransparent);
+        text-align: center;
+        margin: 0.5rem 0; /* Adjust margin between buttons */
+        display: flex; /* Use flexbox to align content */
+        justify-content: center;
+    }
+
+    /* Button link styling */
+    .button1 a {
+        color: #8eb1fc99; /* Set color to light blue */
+        text-decoration: none;
+        display: block; /* Make the anchor fill the entire button */
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        padding: 20px; /* Consistent padding */
+        text-align: center; /* Center the text */
+    }
+
+    /* Button hover and active states */
+    .button1 a:hover, .button1 a:active {
+        color: var(--White); /* White text on hover */
+        background-color: #608bffcc; /* Blue background on hover */
+        font-weight: var(--Fbold);
+    }
+
+    /* Ensure visited links are also black */
+    .button1 a:visited {
+        color: #000; /* Black text for visited links */
+    }
+
+    /* Mobile-friendly text adjustments */
+    .box h1 {
+        font-size: 2rem; /* Smaller h1 font size */
+        padding: 10px;
+    }
+
+    .box .lore-descrip, .box .Important-Notice {
+        font-size: 1rem; /* Reduce font size for paragraph text */
+        padding: 15px;
+    }
+
+    p {
+        font-size: 1rem; /* Reduce font size for paragraphs */
+    }
+
+    /* Adjust navigation links for mobile */
+    .top-nav nav ul li {
+        margin: 0.8rem 0; /* Adjust margin for navigation links */
+    }
+
+    .top-nav nav ul li a {
+        font-size: 1.2rem; /* Adjust font size for mobile nav links */
+    }
+
+    /* Mobile menu toggle button */
+    .top-nav .menu-toggle {
+        font-size: 30px;
+        background: none;
+        color: var(--White);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
     }
 }
