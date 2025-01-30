@@ -251,6 +251,13 @@ p {
     padding-top: 8rem;
 }
 
+.box-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .box-about h1{
     width: 100%; /* Take full width */
     max-width: 600px; /* Optional: Limit max width */
@@ -265,19 +272,105 @@ p {
     width: 100%; /* Take full width */
     max-width: 600px; /* Optional: Limit max width */
     padding: 20px;
-    background-color: rgba(142, 177, 252, 0.6); /* Light background for contrast */
+    background-color: rgba(0, 8, 121, 0.7); /* Light background for contrast */
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
+    margin-top: 1.25rem;
+    margin-bottom: 2rem;
+    border-style: solid;
+    border-color: var(--Blue5-NavTransBlue);
 }
 
+.development-abouts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 3rem;
+}
+
+.development-abouts ul {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 100%;
+}
+
+.aboutlist li {
+    flex: 1 1 45%;
+    max-width: 40%;
+    padding: 15px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0, 8, 121, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin-bottom: 1.5rem;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.name-desc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.name-desc-container h2 {
+    color: rgba(142, 177, 252, 0.6);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.name-desc-container p {
+    color: #b1d3fa;
+    font-size: 1rem;
+    line-height: 1.5s;
+}
+
+/* Odd child items */
+.aboutlist li:nth-child(odd) {
+    flex: 1 1 45%;  /* Adjust the width of the odd items */
+    display: flex;
+    justify-content: center; /* Centers the odd items horizontally */
+}
+
+/* Even child items */
+.aboutlist li:nth-child(even) {
+    flex: 1 1 35%;  /* Adjust the width of the even items */
+    display: flex;
+    justify-content: center; /* Centers the even items horizontally */
+}
 
 .about-title {
     background-color: rgba(142, 177, 252, 0.6);
     box-shadow: 5px 5px 5px 5px #190dc27a;
-    border-style: solid;
-    border-color: rgb(255, 112, 112);
 }
+/* End of About Page */
 
 /* Mobile Layout */
 @media (max-width: 768px) {
