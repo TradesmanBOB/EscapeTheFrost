@@ -103,7 +103,7 @@ body {
 }
   
   /* Box for h1 and p (to separate them) */
-.box h1{
+.box h1 {
     width: 100%; /* Take full width */
     max-width: 600px; /* Optional: Limit max width */
     padding: 20px;
@@ -153,6 +153,23 @@ p {
 
   
   /* Top Nav (Mobile) */
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: -250px;  /* Off-screen initially */
+    height: 100%;
+    background-color: rgba(0, 8, 121, 0.5);
+    z-index: 10;
+    transition: left 0.3s ease;
+}
+
+.mobile-nav.show {
+    left: 0; /* Slide it into view */
+    display: block; /* Ensure it's visible */
+}
+
 .top-nav {
     display: none; /* Hide top nav by default */
     background-color: rgba(0, 8, 121, 0.5);
@@ -197,7 +214,7 @@ p {
     background-color: #1036a0cc;
     color: #000000; /* Default text color (black) */
     border-radius: 8px;
-    box-shadow: 0 4px 8px var(--BlackTransparent);
+    box-shadow: 0 4px 8px var(--Red1);
     text-align: center;
     margin: 0.5rem 20px;
     display: flex; /* Use flexbox to allow full span */
@@ -216,7 +233,7 @@ p {
 
 /* On hover */
 .button1 a:hover {
-    color: var(--White); /* White text on hover */
+    color: var(--Blue1); /* White text on hover */
     background-color: #608bffcc; /* Deep blue background on hover */
     font-weight: var(--Fbold);
     font-size: 2rem;
@@ -275,7 +292,7 @@ p {
     padding: 1.25rem 3rem;
     background-color: rgba(0, 8, 121, 0.7); /* Light background for contrast */
     border-radius: 8px; /* Optional: rounded corners */
-    box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
+    box-shadow: 0 4px 8px #ff00001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
     margin: 1.5rem 0; 
     border-style: solid;
@@ -382,142 +399,289 @@ p {
     justify-content: center; /* Centers the even items horizontally */
 }
 
-.about-title {
+.title-about {
     background-color: rgba(142, 177, 252, 0.6);
     box-shadow: 5px 5px 5px 5px #190dc27a;
+    white-space: nowrap;
+    overflow: hidden;
 }
 /* End of About Page */
 
-/* Mobile Layout */
-@media (max-width: 768px) {
-    /* Sidebar - Hide on mobile */
+/* MEDIA QUERIES <600->1200 */
+/* For screens 600px and below (extra small devices like phones) */
+@media only screen and (max-width: 600px) {
+.top-nav {
+    display: block; /* Ensure top nav is displayed */
+    position: fixed; /* Fix it at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 8, 121, 0.5); /* Adjust background */
+    z-index: 1;
+}
 
-    .content {
-        padding-top: 6rem;
-    }
+/* Move the entire ul down inside the top-nav */
+.top-nav nav ul {
+    padding-top: 80px; /* Adjust padding */
+}
 
-    .sidebar {
-        display: none; /* Hide sidebar on mobile */
-    }
+/* Menu toggle button positioning */
+.top-nav .menu-toggle {
+    font-size: 30px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Keep the hamburger button in the top-left corner */
+    left: 10px;
+    z-index: 100; /* Ensure it stays above the nav */
+}
 
-    .sidebar.show {
-        display: block;
-        background-color: rgba(199, 199, 199, 0.705);
-        color: white;
-        padding-top: 1rem;
-        position: fixed;
+.top-nav nav ul li {
+    margin: 15px 0; /* Reduce space between list items */
+}
+
+.sidebar {
+    display: none; /* Hide sidebar on small devices */
+}
+
+.content-about {
+    margin-top: 20rem; /* Reduce the top margin */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 100%;
+    overflow: auto;
+}
+
+/* Adjust the aboutlist for smaller screens */
+.aboutlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.aboutlist li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;  /* Ensure each item takes up the full width */
+    max-width: 100%;  /* Restrict max width to 100% */
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.aboutlist li {
+    max-width: 300px;
+    min-height: 80px;
+}
+
+.aboutlist li img {
+    width: 70px;  /* Adjust image size */
+    height: 70px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/*      .aboutlist li img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover; /* Ensure the image fits without distorting */
+/*      margin-bottom 10px */
+
+    /* .name-desc-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+    } */
+
+    /* .name-desc-container h2 {
+        font-size: 1.1rem;
+    } */
+
+    /* .name-desc-container p {
+        font-size: 0.9rem;
+    } */
+
+    /* .top-nav nav ul {
+        padding-top: 80px;
+    } */
+
+    /* .top-nav nav ul li {
+        margin: 15px 0;
+        font-size: 1rem;
+    } */ 
+
+.name-desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.name-desc-container h2 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.name-desc-container p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.top-nav nav ul {
+    padding-top: 80px; /* Move the list further down */
+}
+
+/* Ensure the navbar doesn't take up too much space */
+.top-nav nav ul li {
+    margin: 15px 0;
+    font-size: 1rem; /* Adjust font size of menu items */
+}
+
+/* Additional mobile-specific adjustments */
+.aboutlist li:not(:last-child) {
+    padding-bottom: 0.5rem; /* Add small space between list items */
+}
+
+}
+
+/* For screens 600px and above but less than 768px (portrait tablets and larger phones) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .top-nav {
+        display: block; /* Ensure top nav is displayed */
+        position: fixed; /* Fix it at the top */
         top: 0;
         left: 0;
-        height: 100vh;
-        width: 15.625rem;
-        z-index: 1000;
+        width: 100%;
+        background-color: rgba(0, 8, 121, 0.5); /* Adjust background */
+        z-index: 1;
     }
 
-    /* Top Nav - Show on mobile */
-    .top-nav {
-        display: block; /* Show top nav on mobile */
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.384);
+    /* Move content below the top nav */
+    .content-about {
+        margin-top: 80px; /* Ensure content doesn’t overlap with the top nav */
     }
 
-    .menu-toggle {
-        font-size: 30px; /* Adjust size for better visibility */
+    /* Move the entire ul down inside the top-nav */
+    .top-nav nav ul {
+        padding-top: 60px; /* Increase this padding to move list items further down */
     }
 
-    /* Mobile Navigation */
-    .mobile-nav {
-        display: none; /* Hide mobile nav by default */
-    }
-
-    .mobile-nav.show {
-        display: block; /* Show mobile nav when toggled */
-    }
-
-    /* Content section adjustments */
-    .content {
-        padding: 10px; /* Padding adjustments for mobile */
-    }
-
-    /* Adjust buttons for mobile */
-    .button1 {
-        font-size: 1.5rem; /* Reduce font size on mobile */
-        width: 50%; /* Full width buttons */
-        padding: 10px; /* Reduce padding for mobile */
-        max-width: 600px; /* Keep max width for consistency */
-        background-color: #1036a0cc;
-        color: #000000; /* Default text color */
-        border-radius: 8px;
-        box-shadow: 0 4px 8px var(--BlackTransparent);
-        text-align: center;
-        margin: 0.5rem 0; /* Adjust margin between buttons */
-        display: flex; /* Use flexbox to align content */
-        justify-content: center;
-    }
-
-    /* Button link styling */
-    .button1 a {
-        color: #8eb1fc99; /* Set color to light blue */
-        text-decoration: none;
-        display: block; /* Make the anchor fill the entire button */
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        padding: 20px; /* Consistent padding */
-        text-align: center; /* Center the text */
-    }
-
-    /* Button hover and active states */
-    .button1 a:hover, .button1 a:active {
-        color: var(--White); /* White text on hover */
-        background-color: #608bffcc; /* Blue background on hover */
-        font-weight: var(--Fbold);
-    }
-
-    /* Ensure visited links are also black */
-    .button1 a:visited {
-        color: #000; /* Black text for visited links */
-    }
-
-    /* Mobile-friendly text adjustments */
-    .box h1 {
-        font-size: 2rem; /* Smaller h1 font size */
-        padding: 10px;
-    }
-
-    .box .lore-descrip, .box .Important-Notice {
-        font-size: 1rem; /* Reduce font size for paragraph text */
-        padding: 15px;
-    }
-
-    p {
-        font-size: 1rem; /* Reduce font size for paragraphs */
-    }
-
-    /* Adjust navigation links for mobile */
-    .top-nav nav ul li {
-        margin: 2rem 0; /* Adjust margin for navigation links */
-        box-shadow: 5px 5px 5px 5px #6f65ff5d;
-        border-style: solid;
-        border-color: #6f65ff5d;
-        background-color: #190dc27a;
-    }
-
-    .top-nav nav ul li a {
-        font-size: 1.2rem; /* Adjust font size for mobile nav links */
-        color: #95c3f7;
-        text-decoration: none;
-        padding: 10px 20px;
-        display: block;
-        transition: background-color 0.3s;
-    }
-
-    /* Mobile menu toggle button */
+    /* Menu toggle button positioning */
     .top-nav .menu-toggle {
         font-size: 30px;
         background: none;
-        color: var(--White);
+        color: white;
         border: none;
         cursor: pointer;
-        padding: 10px;
+        position: absolute;
+        top: 20px; /* Move the hamburger button down from the top */
+        left: 10px;
+        z-index: 100; /* Ensure it stays above the nav */
+    }
+
+    .top-nav nav ul li {
+        margin: 15px 0; /* Add space between list items */
+    }
+
+    .sidebar {
+        display: none;
     }
 }
 
+/* For screens 768px and below (portrait tablets and smaller devices) */
+@media only screen and (max-width: 768px) {
+    .top-nav {
+        display: block; /* Ensure top nav is displayed */
+        position: fixed; /* Fix it at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 8, 121, 0.5); /* Adjust background */
+        z-index: 1;
+    }
+
+    /* Move content below the top nav */
+    .content-about {
+        margin-top: 80px; /* Ensure content doesn’t overlap with the top nav */
+    }
+
+    /* Move the entire ul down inside the top-nav */
+    .top-nav nav ul {
+        padding-top: 70px; /* Increase padding to move items down */
+    }
+
+    /* Menu toggle button positioning */
+    .top-nav .menu-toggle {
+        font-size: 30px;
+        background: none;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px; /* Move the hamburger button down from the top */
+        left: 10px;
+        z-index: 100; /* Ensure it stays above the nav */
+    }
+
+    .top-nav nav ul li {
+        margin: 15px 0; /* Add space between list items */
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .top-nav {
+        display: none; /* Keep top nav on large devices */
+    }
+
+    .sidebar {
+        display: block; /* Hide sidebar on large devices */
+    }
+
+    .title-about {
+        margin: 20rem 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .top-nav {
+        display: none; /* Keep top nav on extra large devices */
+        position: fixed; /* Fix top nav on the left side */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px; /* Adjust width */
+    }
+
+    .sidebar {
+        display: block; /* Hide the sidebar on extra large devices */
+    }
+}
