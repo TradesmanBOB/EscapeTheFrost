@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- testing -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
-    <title>ETF Login</title>
+    <title>ETF | Login</title>
 </head>
-<body class="loginpage">
-    <header>
-        <nav>
-            <div>
-                <ul class="list-nav">
-                    <li class="bottomLeftlist Frostpunk"><a href="index.html" target="_blank">The Front</a></li>
-                    <li class="bottomLeftlist Frostpunk"><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">Frostpunk The Inspiration</a></li>
-                    <li class="bottomLeftlist GDD"><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">Game Design Document</a></li>
-                    <li><a href="Login.html">Login!</a></li>
-                    <li class="bottomLeftlist"><a href="About.html" target="_blank">(Lorem Ipsum) About Us</a></li> 
-                    <li><a href="contact.html">(Non-functional) Contact page</a></li>
-                    <li class="bottomLeftlist"><a href="https://discord.gg/jB3SC4pZTg" target="_blank">ETF Discord</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>    
-    <div class="mainsign1">
-        <h1 class="aligncenter1 LoginBlue loginbottom">We welcome your return Scavenger!</h1>
-        <h2 class="aligncenter1 subtitleSignup">Are you prepared for more Scavenging today, Scavenger?</h2>
-        <form action="/login" method="POST">
-            <div class="stylin aligncenter1">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
-            </div>
-            <div class="stylin aligncenter1">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-        </form>
 
-        <div class="buttonLogs">
-            <!-- Navigation links outside the form -->
-            <a href="SignUp.html" class="playbutton5 login-page aligncenter1 strong">
-                New Character? Click here!
-            </a>
-            <a class="playbutton4 login-page aligncenter1 strong" href="https://store.steampowered.com/app/323190/Frostpunk/">
-                Enter The City
-            </a>
-        </div>
+<body>
+
+    <!-- Sidebar (Desktop) -->
+    <div class="desktop-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">The Frosty Front</a></li>
+                <li><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">The Inspiration</a></li>
+                <li><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">Design Document</a></li>
+                <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank">Discord</a></li>
+                <li><a href="About.html">About (Lorem Ipsum)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="SignUp.html">Become Scavenger</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <!-- Top Nav (Mobile) -->
+    <div class="sidebar-mobile">
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">The Frosty Front</a></li>
+                <li><a href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank">The Inspiration</a></li>
+                <li><a href="https://docs.google.com/document/d/1VEmsgKdYaYg1tzdK-cD21zM80b1C9eOHTBzYMQc3LX0/edit?usp=sharing" target="_blank">Design Document</a></li>
+                <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank">Discord</a></li>
+                <li><a href="About.html">About (Lorem Ipsum)</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="SignUp.html">Become Scavenger</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <!-- Main Content -->
+    <section class="content">
+        <div class="box">
+            <h1>
+                Escape The Frost <br> Login
+            </h1>
+        </div>
+        <div class="subtitle">
+            <h2>
+                Welcome back Scavenger, are you ready for more scavenging, Scavenger?
+            </h2>
+        </div>
+        <div>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <!-- Added submit button -->
+                <button type="submit">Login</button>
+            </form>
+        </div>        
+        <div>   <!-- Navigation links outside the form -->
+            <div class="buttonLogs">
+                <a href="SignUp.html" class="playbutton5 login-page aligncenter1 strong">
+                    New Character? Click here!
+                </a>
+                <a class="playbutton4 login-page aligncenter1 strong" href="https://store.steampowered.com/app/323190/Frostpunk/">
+                    Enter The City
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>

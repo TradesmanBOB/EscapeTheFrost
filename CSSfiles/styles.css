@@ -417,7 +417,7 @@ p {
         left: 0;
         width: 100%;
         background-color: rgba(0, 8, 121, 0.5);
-        z-index: 1;
+        z-index: 1; /* Ensure sidebar has correct stacking context */
     }
 
     .sidebar-mobile nav ul {
@@ -434,10 +434,6 @@ p {
         top: 20px;
         left: 10px;
         z-index: 100;
-    }
-
-    .sidebar-mobile nav ul li {
-        margin: 15px 0;
     }
 
     .desktop-nav {
@@ -476,6 +472,8 @@ p {
         padding: 1rem;
         box-sizing: border-box;
         margin-bottom: 1rem;
+        position: relative;  /* Ensure it behaves properly within the container */
+        z-index: 10; /* Ensure list item has the correct stacking context */
     }
 
     /* Image adjustments */
@@ -483,7 +481,8 @@ p {
         width: 150px;
         height: 150px;
         object-fit: cover;
-        margin: 0 auto;  /* Centers the image */
+        margin-right: 20rem;  /* Add space between image and text */
+        z-index: 1; /* Ensure the image is beneath the text */
     }
 
     .name-desc-container {
@@ -497,17 +496,17 @@ p {
         border-radius: 8px;
         text-align: center;
         overflow: hidden;
+        z-index: 5;  /* Ensure the name-desc-container is above the image */
     }
 
     .name-desc-container h2 {
         color: rgba(142, 177, 252, 0.6);
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-weight: bold;
-        text-align: center;  /* Center align text */
-        max-width: 90%; /* Adjust max width to fit container */
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;  /* Add ellipsis if name is too long */
+        text-align: center;
+        max-width: 100%; /* Adjust max width to fit container */
+        white-space: normal; /* Allow text to wrap */
+        z-index: 5; /* Ensure heading is above the image */
     }
 
     .name-desc-container p {
