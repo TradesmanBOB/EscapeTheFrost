@@ -11,7 +11,7 @@
     --White: white;
     --LightBlue:rgba(142, 177, 252, 0.6);
     --BlackTransparent: #0000001a;
-    --Blue1: #1036a0cc;
+    --Blue1: #1036a0f2;
     --Red1: #800202cc;
     --Blue2: #0058b1;
     --GoldOrange: #ffbd67;
@@ -211,7 +211,7 @@ p {
     width: 20%;
     padding: 10px;
     max-width: 600px;
-    background-color: #1036a0cc;
+    background-color: #143eb3f2;
     color: #000000; /* Default text color (black) */
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--Red1);
@@ -222,7 +222,7 @@ p {
 }
 
 .button1 a {
-    color: #8eb1fc99; /* Set color to black for all states */
+    color: #61ffff; /* Set color to black for all states */
     text-decoration: none; /* Remove underline */
     display: block; /* Make the anchor take up the full space of the button */
     width: 100%; /* Make the anchor span the full width */
@@ -233,16 +233,17 @@ p {
 
 /* On hover */
 .button1 a:hover {
-    color: var(--Blue1); /* White text on hover */
-    background-color: #608bffcc; /* Deep blue background on hover */
+    color: #00e6ff; /* White text on hover */
+    background-color: #011857f2; /* Deep blue background on hover */
     font-weight: var(--Fbold);
     font-size: 2rem;
 }
 
 /* Ensure visited links are also black, to prevent purple text */
 .button1 a:visited {
-    color: #000; /* Black text for visited links */
+    color: #ff9429; /* past visited text color (gold-ish) */
 }
+/* c3c3c3 or c58129 or ff9429*/
 
 .about-body {
     font-family: Arial, sans-serif;

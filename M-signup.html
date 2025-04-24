@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- testing -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
-    <title>Escape The Frost</title>
+    <title>ETF Sign-Up</title>
 </head>
 <body>
-
+    
     <!-- Sidebar (Desktop) -->
     <div class="desktop-nav">
         <nav>
@@ -29,43 +28,45 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="K-project-overview.html">Project Overview</a></li>
-                <li><a href="https://discord.gg/jB3SC4pZTg" target="_blank" rel="noopener noreferrer">Discord</a></li>
-                <li><a href="J-about.html">About</a></li>
+                <li><a href="J-about.html">About (Lorem Ipsum)</a></li>
                 <li><a href="N-contact.html">Contact</a></li>
             </ul>
         </nav>
     </div>  <!-- closes sidebar-mobile -->
 
     <!-- Main Content -->
-  <div class="content">
-        <div class="box">
-            <h1>Escape The Frost</h1>
+    <section class="content">
+        <div>
+            <h1>
+                Craft Your Identity Scavenger!
+            </h1>
         </div>
-        <div class="box">
-            <p class="lore-descrip">
-                Welcome, Scavenger! Rest, relax, craft, and 
-                upgrade before heading back into the wastes. The City's survival as well as your own,
-                depends on you, your fellow scavengers, and those working behind the scenes.
-                <br><strong>We All Lift Together!</strong>
-            </p>
+        <div>
+            <h2>
+                This will be your character creation and login.
+            </h2>
         </div>
-        <div class="box">
-            <p class="Important-Notice">
-                This is a fan-made game based on Frostpunk and its sequel. 
-                Licensing will be obtained if needed during development.
-            </p>
+        <!-- Username below reference -->
+        <div>
+            <label for="name">Username</label><input type="text" name="name" id="name">
         </div>
-        <div class="button1">
-            <a href="M-signup.html" class="SignUp">
-                Awaken Scavenger?
-            </a>
+        <!-- Email below reference -->
+        <div>
+            <label for="email">Email</label><input type="email" name="email" id="email">
         </div>
-        <div class="button1">
-            <a href="L-login.html" class="Login">
-                Continue on Scavenger?
-            </a>
+        <!-- Password below reference -->
+        <div>
+            <label for="password">Password:</label><input type="password" name="password" id="password">
         </div>
-    </div>
+        <div>
+                <!-- First button (styled as link) -->
+            <div>
+                <a href="L-login.html">
+                    Already have a character? Click here!
+                </a>
+            </div>
+        </div>
+    </section>
     <script src="JavaScript/main.js"></script>
 </body>
 </html>
