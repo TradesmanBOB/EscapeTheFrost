@@ -39,23 +39,23 @@
     </div>  <!-- closes sidebar-mobile -->
 
     <!-- Main Content -->
-    <section class="content">
-        <div class="box">
+    <section class="content-credentials">
+        <div class="box-login-h1">
             <h1>
                 Escape The Frost <br> Login
             </h1>
         </div>
-        <div class="subtitle">
+        <div class="subtitle-login">
             <h2>
-                Welcome back Scavenger, are you ready for more scavenging, Scavenger?
+                Welcome back Scavenger, are you ready to scavenge again?
             </h2>
-        </div>
-        <div>
+        </div> <!-- closes subtitle-login -->
+        <div class="form-container"> <!-- form-container for login credentials -->
             <form action="/login" method="POST">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
-                </div>
+                </div> <!-- closes form-group -->
                 <div class="form-group">
                     <label for="password">Password:</label>
                     <input type="password" name="password" id="password" required>
@@ -63,18 +63,20 @@
                 <!-- Added submit button -->
                 <button type="submit">Login</button>
             </form>
-        </div>        
-        <div>   <!-- Navigation links outside the form -->
-            <div class="buttonLogs">
+        </div> <!-- closes form-group -->
+        <div class="button-container"> <!--Navigation links outside the form-->
+            <div class="account-signup">
                 <a href="M-signup.html" class="playbutton5 login-page aligncenter1 strong">
                     New Character? Click here!
                 </a>
+            </div> <!-- closes account-signup -->
+            <div class="frostpunk-link">
                 <a class="playbutton4 login-page aligncenter1 strong" href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank" rel="noopener noreferrer">
-                    Enter The City <strong>(This is steam link, stupid)</strong>
+                    Link to Frostpunk
                 </a>
-            </div>
-        </div>
-    </section>
+            </div> <!-- closes frostpunk-link -->
+        </div> <!-- closes button-container -->
+    </section> <!-- closes content-credentials -->
     <script src="JavaScript/main.js"></script>
 </body>
 </html>

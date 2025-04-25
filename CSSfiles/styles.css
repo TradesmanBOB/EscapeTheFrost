@@ -59,6 +59,7 @@ body {
     padding-top: 16px;
     display: block;
     margin-left: 40px;
+    z-index: 10;
 }
   
 .desktop-nav nav ul {
@@ -90,7 +91,7 @@ body {
 }
   
   /* Content section - Main content area */
-.content {
+.content-credentials, .content-index {
     flex-grow: 1; /* Take up the remaining space after the sidebar */
     display: flex;
     flex-direction: column; /* Stack the boxes vertically */
@@ -284,7 +285,7 @@ p {
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
-    margin: 16rem 0 0;
+    margin: 10rem 0 0;
 }
 
 .about-us-p {
@@ -295,7 +296,7 @@ p {
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 8px #ff00001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
-    margin: 1.5rem 0; 
+    margin: 1rem 0; 
     border-style: solid;
     border-color: var(--Blue5-NavTransBlue);
     line-height: 1.6;
@@ -308,7 +309,7 @@ p {
     justify-content: center;
     width: 100%;
     max-width: 1200px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .development-abouts ul {
@@ -335,7 +336,7 @@ p {
     max-width: 40%;
     background-color: rgba(0, 8, 121, 0.7);
     padding: 15px;
-    border-radius: 15%;
+    border-radius: 8%;
     box-shadow: 0 4px 8px #0000001a;
     text-align: center;
     margin-bottom: 1.5rem; 
@@ -360,7 +361,7 @@ p {
 
 .name-desc-container h2 {
     color: rgba(142, 177, 252, 0.6);
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 10px;
     position: relative;
@@ -406,7 +407,268 @@ p {
     white-space: nowrap;
     overflow: hidden;
 }
+
+.content-about .button1 {
+    display: flex; /* Use flexbox to allow full span */
+    margin: 0.5rem 20px;
+    justify-content: center; /* Center the content if needed */
+    position: relative;
+    top: -25px;
+    border-color: #00e6ff;
+}
 /* End of About Page */
+
+/* start Project-Overview Page */
+.project-overview-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content-project-overview {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 90vh;
+    padding: 6rem;
+    gap: 1rem;
+}
+
+.headtitle {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    left: 2rem;
+}
+
+.inspiration-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 8, 121, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    position: relative;
+    left: 2rem;
+}
+
+.inspiration-content h2 {
+    color: #ff9429;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.inspiration-content p {
+    color: #b1d3fa;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 600px; /* Limit the width of the paragraph */
+}
+
+.inspiration-content a {
+    color: #61ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding for better click area */
+    background-color: #0000ff; /* Background color for the link */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+}
+
+.designdoc-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 8, 121, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    position: relative;
+    left: 2rem;
+}
+
+.designdoc-content h2 {
+    color: #ff9429;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.designdoc-content p {
+    color: #b1d3fa;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 600px;
+}
+
+.designdoc-content a {
+    color: #61ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0000ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.community-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 8, 121, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    position: relative;
+    left: 2rem;
+}
+
+.community-section h2 {
+    color: #ff9429;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.community-section p {
+    color: #b1d3fa;
+    font-size: 1.2rem;
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 600px;
+}
+
+.community-section a {
+    color: #61ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0000ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.footer-project-overview {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+    height: 10vh;
+}
+
+.footer-project-overview p {
+    color: #ff9429;
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+/* End Project-Overview Page */
+
+/* Start Login Page CSS */
+
+.content-credentials {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2rem;
+    gap: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.box-login-h1 {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(142, 177, 252, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+}
+
+.subtitle-login {
+    color: #b1d3fa;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 0; /* Remove top margin to reduce space above p */
+    background-color: rgba(0, 8, 121, 0.7);
+    padding: 1rem;
+    width: 100%;
+    max-width: 550px; /* Limit the width of the paragraph */
+}
+
+.subtitle-login h2 {
+    color: #ff9429;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    position: relative;
+    gap: 4rem;
+}
+
+.account-signup, .frostpunk-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 255, 0.925); /* Background color for the link */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+    position: relative;
+    left: 2rem;
+}
+
+.account-signup a, .frostpunk-link a {
+    color: #61ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    padding: 10px 20px; /* Add padding for better click area */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* End Login Page CSS */
+
+/* Start Signup Page CSS */
+
+
+
+/* End Signup Page CSS */
 
 /* MEDIA QUERIES <600->1200 */
 /* For screens 600px and below (extra small devices like phones) */
