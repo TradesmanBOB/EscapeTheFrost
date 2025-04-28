@@ -51,7 +51,7 @@
             </h2>
         </div> <!-- closes subtitle-login -->
         <div class="form-container"> <!-- form-container for login credentials -->
-            <form action="/login" method="POST">
+            <form action="/login" method="POST" id="login-form">
                 <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" required>
@@ -61,21 +61,24 @@
                     <input type="password" name="password" id="password" required>
                 </div>
                 <!-- Added submit button -->
-                <button type="submit">Login</button>
+                <button type="submit" id="login-button">Login</button>
             </form>
         </div> <!-- closes form-group -->
         <div class="button-container"> <!--Navigation links outside the form-->
             <div class="account-signup">
-                <a href="M-signup.html" class="playbutton5 login-page aligncenter1 strong">
+                <a href="M-signup.html" class="playbutton5 login-page strong">
                     New Character? Click here!
                 </a>
             </div> <!-- closes account-signup -->
             <div class="frostpunk-link">
-                <a class="playbutton4 login-page aligncenter1 strong" href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank" rel="noopener noreferrer">
+                <a class="playbutton4 login-page strong" href="https://store.steampowered.com/app/323190/Frostpunk/" target="_blank" rel="noopener noreferrer">
                     Link to Frostpunk
                 </a>
             </div> <!-- closes frostpunk-link -->
         </div> <!-- closes button-container -->
+        <footer class="footer">
+            <p>&copy; 2023 Escape The Frost. All rights reserved.</p>
+        </footer>
     </section> <!-- closes content-credentials -->
     <script src="JavaScript/main.js"></script>
 </body>

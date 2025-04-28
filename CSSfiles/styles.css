@@ -90,17 +90,20 @@ body {
     font-weight: bold;
 }
   
+.content-index {
+    gap: 2rem;
+}
+
   /* Content section - Main content area */
 .content-credentials, .content-index {
     flex-grow: 1; /* Take up the remaining space after the sidebar */
     display: flex;
     flex-direction: column; /* Stack the boxes vertically */
-    justify-content: flex-start; /* Align content to the top */
+
     align-items: center; /* Center horizontally */
     padding: 20px;
     min-height: 100vh; /* Make sure content takes full height */
-    gap: 30px; /* Add space between the boxes */
-    padding-top: 8rem;
+    padding-top: 4rem;
 }
   
   /* Box for h1 and p (to separate them) */
@@ -173,7 +176,6 @@ p {
 
 .sidebar-mobile {
     display: none; /* Hide top nav by default */
-    background-color: rgba(0, 8, 121, 0.5);
     color: var(--White);
     padding: 10px;
 }
@@ -262,12 +264,10 @@ p {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
     max-height: 100vh;
     gap: 10px;
-    padding-top: 8rem;
 }
 
 .box-about {
@@ -285,7 +285,7 @@ p {
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 4px 8px #0000001a; /* Optional: soft shadow */
     text-align: center; /* Center text inside the box */
-    margin: 10rem 0 0;
+    margin: 0;
 }
 
 .about-us-p {
@@ -408,7 +408,46 @@ p {
     overflow: hidden;
 }
 
-.content-about .button1 {
+.button-contact {
+    display: flex; /* Use flexbox to allow full span */
+    margin: 0.5rem 20px;
+    justify-content: center; /* Center the content if needed */
+    position: relative;
+    top: -25px;
+    box-shadow: 0 4px 8px #00e6ff; /* Add shadow to the button */
+    font-size: 2rem;
+    width: 20%;
+    padding: 10px;
+    max-width: 600px;
+    background-color: #143eb3f2;
+    color: #000000; /* Default text color (black) */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.button-contact a {
+    color: #00e6ff; /* Set color to deep orange for all states */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the anchor take up the full space of the button */
+    width: 100%; /* Make the anchor span the full width */
+    height: 100%; /* Make the anchor span the full height */
+    padding: 20px; /* Ensure padding is consistent */
+    text-align: center; /* Center the text inside the button */
+}
+
+.button-contact a:hover {
+    background-color: #011857f2; /* Deep blue background on hover */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
+}
+
+.button-contact a:visited {
+    color: #df7914; /* past visited text color (gold-ish) */
+}
+
+/* End of About Page */
+
+.button1 {
     display: flex; /* Use flexbox to allow full span */
     margin: 0.5rem 20px;
     justify-content: center; /* Center the content if needed */
@@ -416,32 +455,26 @@ p {
     top: -25px;
     border-color: #00e6ff;
 }
-/* End of About Page */
 
 /* start Project-Overview Page */
 .project-overview-body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .main-content-project-overview {
     display: flex;
     justify-self: center;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
-    height: 90vh;
-    padding: 6rem;
+    padding: 2rem;
     gap: 1rem;
 }
 
 .headtitle {
     font-size: 3rem;
     text-align: center;
-    position: relative;
-    left: 2rem;
 }
 
 .inspiration-content {
@@ -454,15 +487,12 @@ p {
     background-color: rgba(0, 8, 121, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
-    position: relative;
-    left: 2rem;
 }
 
 .inspiration-content h2 {
     color: #ff9429;
     font-size: 2rem;
     text-align: center;
-    position: relative;
 }
 
 .inspiration-content p {
@@ -494,8 +524,6 @@ p {
     background-color: rgba(0, 8, 121, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
-    position: relative;
-    left: 2rem;
 }
 
 .designdoc-content h2 {
@@ -534,8 +562,6 @@ p {
     background-color: rgba(0, 8, 121, 0.9);
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
-    position: relative;
-    left: 2rem;
 }
 
 .community-section h2 {
@@ -564,19 +590,22 @@ p {
     box-shadow: 0 4px 8px #0000001a;
 }
 
-.footer-project-overview {
+.footer {
     display: flex;
+    justify-self: center;
+    align-self: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
     padding: 2rem;
-    height: 10vh;
+    background-color: var(--Red1);
 }
 
-.footer-project-overview p {
-    color: #ff9429;
+.footer p {
+    color: var(--GoldOrange);
     font-size: 1.2rem;
     text-align: center;
     position: relative;
+    width: 100%;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
 }
@@ -589,27 +618,33 @@ p {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    padding: 2rem;
-    gap: 4rem;
+    padding: .5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
+    gap: 1rem;
 }
 
 .box-login-h1 {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
     background-color: rgba(142, 177, 252, 0.6);
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
     text-align: center;
-    position: relative;
-    top: 1rem;
+}
+
+.h1-signup, .box-login-h1 h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0; /* Remove top margin to reduce space above h1 */
+    padding: 1rem;
+    width: 100%;
+    max-width: 550px; /* Limit the width of the heading */
 }
 
 .subtitle-login {
     color: #b1d3fa;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 0; /* Remove top margin to reduce space above p */
     background-color: rgba(0, 8, 121, 0.7);
@@ -620,7 +655,7 @@ p {
 
 .subtitle-login h2 {
     color: #ff9429;
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
     position: relative;
     overflow-wrap: break-word;
@@ -631,12 +666,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a;
     position: relative;
-    gap: 4rem;
+    gap: 1.5rem;
 }
 
 .account-signup, .frostpunk-link {
@@ -645,12 +678,8 @@ p {
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem;
-    background-color: rgba(0, 0, 255, 0.925); /* Background color for the link */
     border-radius: 8px;
     box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
-    position: relative;
-    left: 2rem;
 }
 
 .account-signup a, .frostpunk-link a {
@@ -660,15 +689,243 @@ p {
     text-decoration: none; /* Remove underline */
     padding: 10px 20px; /* Add padding for better click area */
     border-radius: 8px; /* Rounded corners */
+    padding: 2rem;
+    background-color: rgba(0, 0, 255, 0.925); /* Background color for the link */
+}
+
+.account-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+}
+
+.account-login a {
+    color: #61ffff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    padding: 1rem; /* Add padding for better click area */
+    border-radius: 8px; /* Rounded corners */
+    background-color: rgba(0, 0, 255, 0.925); /* Background color for the link */
+}
+
+.account-login a:hover {
+    color: #00e6ff; /* White text on hover */
+    background-color: #011857f2; /* Deep blue background on hover */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
+}
+
+.h1-signup {
+    font-size: 3.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background-color: #000879cc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+#signup-form, #login-form { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form-container label {
+    color: #b1d3fa;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0; /* Remove top margin to reduce space above label */
+}
+
+.form-container input {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input fields */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+    font-size: 1.2rem;
+}
+
+#login-button, #signup-button {
+    font-size: 2.4rem;
+    padding: 10px;
+    max-width: 600px;
+    background-color: rgba(0, 8, 121);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--Red1);
+    text-align: center;
+    display: flex; /* Use flexbox to allow full span */
+    justify-content: center; /* Center the content if needed */
+    align-self: center;
+    justify-self: center; 
+    color: #61ffff; /* Set color to lightblue for states */
+}
+
+#login-button:active, #signup-button:active {
+    background-color: #800202; /* Background color for the link */
+    color: rgb(255, 189, 103); /* Set color to lightblue for states */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
+}
+
+.account-signup a:hover{
+    color: rgb(255, 189, 103); /* Gold text on hover */
+    background-color: #800202; /* Dark red background on hover */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
+}
+
+.frostpunk-link a:hover {
+    color: #61ffff; /* Gold text on hover */
+    background-color: #011857f2; /* Darkest blue background on hover */
+    font-weight: var(--Fbold);
+    font-size: 2rem;
 }
 
 /* End Login Page CSS */
 
-/* Start Signup Page CSS */
+/* Start Contact Page CSS */
 
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+}
 
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 100%;
+    text-align: center;
+    gap: 1.5rem;
+}
 
-/* End Signup Page CSS */
+.contact-heading {
+    font-size: 3rem;
+    background-color: rgba(0, 8, 121, 0.9);
+    color: #00e6ff;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-contact {
+    
+    background-color: rgba(0, 8, 121, 0.9);
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    padding-bottom: 2rem;
+}
+
+.form-label {
+    color: #b1d3fa;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0; /* Remove top margin to reduce space above label */
+}
+
+.form-input {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input fields */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+    font-size: 2rem;
+}
+
+.text-box-area {
+    width: 100%;
+    max-width: 400px; /* Limit the width of the input fields */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* Light border for input fields */
+    box-shadow: 0 4px 8px #0000001a; /* Shadow effect */
+    font-size: 1.5rem;
+    height: 200px; /* Set a fixed height for the text area */
+}
+
+.extra-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgba(0, 8, 121, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+/* End Contact Page CSS */
 
 /* MEDIA QUERIES <600->1200 */
 /* For screens 600px and below (extra small devices like phones) */
@@ -679,7 +936,7 @@ p {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 8, 121, 0.5);
+
         z-index: 1; /* Ensure sidebar has correct stacking context */
     }
 
@@ -795,7 +1052,6 @@ p {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 8, 121, 0.5); /* Adjust background */
         z-index: 1;
     }
 
@@ -839,7 +1095,6 @@ p {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: rgba(0, 8, 121, 0.5); /* Adjust background */
         z-index: 1;
     }
 

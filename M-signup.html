@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
-    <title>ETF Sign-Up</title>
+    <title>ETF | Sign-Up</title>
 </head>
 <body>
     
@@ -37,7 +37,7 @@
     <!-- Main Content -->
     <section class="content-credentials">
         <div class="box-login-h1">
-            <h1>
+            <h1 class="h1-signup">
                 Craft Your Identity Scavenger!
             </h1>
         </div>
@@ -48,7 +48,7 @@
         </div>
         <!-- Username below reference -->
         <div class="form-container"> <!-- shared styling -->
-            <form action="/signup" method="POST">
+            <form action="/signup" method="POST" id="signup-form">
                 <div class="form-group">
                     <label for="name">Username:</label>
                     <input type="text" name="name" id="name" required>
@@ -64,18 +64,21 @@
                     <input type="password" name="password" id="password" required>
                 </div>
         
-                <button type="submit">Sign Up</button>
+                <button type="submit" id="signup-button">Sign Up</button>
             </form>
         </div> <!-- closes form-group -->        
         <div>
                 <!-- First button (styled as link) -->
-            <div class="account-signup">
+            <div class="account-login">
                 <a href="L-login.html">
                     Already have a character? Click here!
                 </a>
             </div>
-        </div>
-    </section>
+        </div> <!-- closes account-login -->
+        <footer class="footer">
+            <p>&copy; 2023 Escape The Frost. All rights reserved.</p>
+        </footer>
+    </section> <!-- closes content-credentials -->
     <script src="JavaScript/main.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSSfiles/styles.css"/>
-    <title>ETF Contact Page</title>
+    <title>ETF | Contact Page</title>
 </head>
 
     <!-- Sidebar (Desktop) -->
@@ -37,30 +37,30 @@
     </div>  <!-- closes sidebar-mobile -->
 
     <!-- Main Content -->
-    <div class="contactpage aligncenter1">
-        <h1 class="about">Contact Us</h1>
-        <div class="containingcontainer">
-            <div class="container aligncenter1">
-                  <form action="action_page.php">
-          
-                  <label for="fuser" class="coloringcontact">Username</label>
-                  <input type="text" id="fuser" name="username" placeholder="Username..">
-          
-                  <label for="lemail" class="coloringcontact">Email</label>
-                  <input type="text" id="lemail" name="email" placeholder="Email..">
-              
-                  <label for="subject" class="coloringcontact">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-                  <input type="submit" value="Submit" class="submit">
-                </form>
-            </div>
-            <button class="playbutton3">
-                <a class="contact" href="N-contact.html"_blank>
-                <strong>Contact Us</strong>
-            </a></button>
-        </div>
-    </div>
+    <div class="contact-page">
+        <div class="contact-body">
+          <h1 class="contact-heading">Contact Us</h1>
+      
+          <div class="form-container">
+            <form action="action_page.php" method="POST" class="contact-form form-contact">
+      
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" name="username" placeholder="Your username..." required>
+      
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email address..." required>
+      
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="text-box-area" name="message" placeholder="Write your message..." style="height:200px" required></textarea>
+      
+              <input type="submit" value="Send Message" class="submit-button">
+            </form> <!-- closes form -->
+          </div> <!-- closes form-container -->
+        </div><!-- closes contact-body -->
+        <footer class="footer">
+            <p>&copy; 2023 Escape The Frost. All rights reserved.</p>
+        </footer>
+      </div> <!--- closes contact-page -->
     <script src="JavaScript/main.js"></script>
 </body>
 </html>
